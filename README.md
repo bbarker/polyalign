@@ -23,6 +23,7 @@ cd embassy
 4) If you downloaded a zip file:
 
 unzip <Download Location>/polyalign-master.zip
+
 mv polyalign-master polyalign
 
 Otherwise, just clone the repository:
@@ -30,17 +31,25 @@ Otherwise, just clone the repository:
 git clone https://github.com/bbarker/polyalign.git
 
 5) go into the polyalign directory:
+
 cd polyalign
 
 6) configure and compile
+
 ./autogen.sh (this may be all that is needed)
+
 ./configure (use same options as you used to compile emboss)
+
 make
+
 make install
 
 7) To test:
+
 cd source
+
 para2 -asequence seqa.fasta -bsequence seqb.fasta
+
 (press enter)
 
 
