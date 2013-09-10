@@ -43,3 +43,8 @@ automake -a
 make
 make install
 
+
+5) To test:
+cd source
+para2 -asequence seqa.fasta -bsequence seqb.fasta
+(press enter)

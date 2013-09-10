@@ -91,14 +91,19 @@ while(1):
     log_mismatch.flush()
     gaps = write_jc_matrices()
     stretcher_cmd="../../../emboss/stretcher -datafile DNAMM -gapopen "+str(-gaps[0])+" -gapextend "+str(-gaps[1])+" -asequence seqa.fasta -bsequence seqb.fasta"
+    print("running:")
+    print(stretcher_cmd)
     #stretcher_cmd="/home/brandon/emboss/emboss/emboss/stretcher -datafile DNAMM -gapopen 4 -gapextend 1 -asequence seqa.fasta -bsequence seqb.fasta"
     #ZZ(stretcher.stdin,stretcher.stdout) = os.popen4(stretch_cmd,"w")
     stretcher = subprocess.Popen(stretcher_cmd, shell=True, bufsize=1000000, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, close_fds=True)
     stretcher.stdin.write("\n\n")
     stretcher.stdin.flush()
     stretcher.wait()
-    para2_cmd="../source/para2.go -asequence seqa.fasta -bsequence seqb.fasta"
+    para2_cmd="../source/para2 -asequence seqa.fasta -bsequence seqb.fasta"
+    print("running:")
+    print(para2_cmd)
     #(para2_in,para2_out) = os.popen4(para2_cmd,"w")
+    para2_env = {}
     para2 = subprocess.Popen(para2_cmd, shell=True, env=para2_env, bufsize=1000000, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, close_fds=True)
     para2.stdin.write("\n")
     para2.stdin.flush()

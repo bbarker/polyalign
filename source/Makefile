@@ -49,6 +49,8 @@ POST_INSTALL = :
 NORMAL_UNINSTALL = :
 PRE_UNINSTALL = :
 POST_UNINSTALL = :
+build_triplet = x86_64-unknown-linux-gnu
+host_triplet = x86_64-unknown-linux-gnu
 bin_PROGRAMS = para2$(EXEEXT)
 subdir = source
 DIST_COMMON = $(srcdir)/Makefile.am $(srcdir)/Makefile.in TODO
@@ -80,9 +82,13 @@ am__depfiles_maybe = depfiles
 am__mv = mv -f
 CXXCOMPILE = $(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) \
 	$(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS)
+LTCXXCOMPILE = $(LIBTOOL) --tag=CXX $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) \
+	--mode=compile $(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) \
+	$(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS)
 CXXLD = $(CXX)
-CXXLINK = $(CXXLD) $(AM_CXXFLAGS) $(CXXFLAGS) $(AM_LDFLAGS) $(LDFLAGS) \
-	-o $@
+CXXLINK = $(LIBTOOL) --tag=CXX $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) \
+	--mode=link $(CXXLD) $(AM_CXXFLAGS) $(CXXFLAGS) $(AM_LDFLAGS) \
+	$(LDFLAGS) -o $@
 SOURCES = $(para2_SOURCES)
 DIST_SOURCES = $(para2_SOURCES)
 am__can_run_installinfo = \
@@ -93,31 +99,38 @@ am__can_run_installinfo = \
 ETAGS = etags
 CTAGS = ctags
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
-ACLOCAL = ${SHELL} /home/brandon/polyalign/missing --run aclocal-1.11
-AJAX_FIXED_ROOT = \"/home/brandon/polyalign/emboss\"
+ACLOCAL = ${SHELL} /home/brandon/emboss/embassy/polyalign/missing --run aclocal-1.11
+AJAX_FIXED_ROOT = \"/home/brandon/emboss/embassy/polyalign/emboss\"
 ALLOCA = 
 AMTAR = $${TAR-tar}
-AUTOCONF = ${SHELL} /home/brandon/polyalign/missing --run autoconf
-AUTOHEADER = ${SHELL} /home/brandon/polyalign/missing --run autoheader
-AUTOMAKE = ${SHELL} /home/brandon/polyalign/missing --run automake-1.11
+AR = ar
+AS = as
+AUTOCONF = ${SHELL} /home/brandon/emboss/embassy/polyalign/missing --run autoconf
+AUTOHEADER = ${SHELL} /home/brandon/emboss/embassy/polyalign/missing --run autoheader
+AUTOMAKE = ${SHELL} /home/brandon/emboss/embassy/polyalign/missing --run automake-1.11
 AWK = gawk
 CC = gcc
 CCDEPMODE = depmode=gcc3
-CFLAGS = -I/usr/lib/emboss/include -I/usr/lib/emboss/include/epcre -I/usr/lib/emboss/include/eplplot  -fopenmp -O2 -D__amd64__
+CFLAGS =   -fopenmp -O2 -D__amd64__
 CPP = gcc -E
 CPPFLAGS = -DAJ_LinuxLF -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE  -DLENDIAN -DNO_AUTH
 CXX = g++
+CXXCPP = g++ -E
 CXXDEPMODE = depmode=gcc3
-CXXFLAGS = -I/usr/lib/emboss/include -I/usr/lib/emboss/include/epcre -I/usr/lib/emboss/include/eplplot  -fopenmp -O2 -D__amd64__
+CXXFLAGS =   -fopenmp -O2 -D__amd64__
 CYGPATH_W = echo
-DEFS = -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"PARA2\" -DVERSION=\"0.0.1\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_ALLOCA_H=1 -DHAVE_ALLOCA=1 -DHAVE_DIRENT_H=1 -DSTDC_HEADERS=1 -DHAVE_UNISTD_H=1 -DGETPGRP_VOID=1 -DHAVE_STRFTIME=1 -DHAVE_FORK=1 -DHAVE_VFORK=1 -DHAVE_WORKING_VFORK=1 -DHAVE_WORKING_FORK=1 -DHAVE_VPRINTF=1 -DHAVE_STRDUP=1 -DHAVE_STRSTR=1 -DHAVE_STRCHR=1 -DHAVE_ERAND48=1 -DHAVE_MEMMOVE=1 -DHAVE_LIBM=1
+DEFS = -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"PARA2\" -DVERSION=\"0.0.1\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_ALLOCA_H=1 -DHAVE_ALLOCA=1 -DHAVE_DIRENT_H=1 -DSTDC_HEADERS=1 -DHAVE_UNISTD_H=1 -DGETPGRP_VOID=1 -DHAVE_STRFTIME=1 -DHAVE_FORK=1 -DHAVE_VFORK=1 -DHAVE_WORKING_VFORK=1 -DHAVE_WORKING_FORK=1 -DHAVE_VPRINTF=1 -DHAVE_STRDUP=1 -DHAVE_STRSTR=1 -DHAVE_STRCHR=1 -DHAVE_ERAND48=1 -DHAVE_MEMMOVE=1 -DHAVE_LIBM=1
 DEPDIR = .deps
+DLLTOOL = dlltool
+DSYMUTIL = 
+DUMPBIN = 
 ECHO_C = 
 ECHO_N = -n
 ECHO_T = 
 EGREP = /bin/grep -E
-EMBOSS_TOP = /home/brandon/polyalign
+EMBOSS_TOP = /home/brandon/emboss/embassy/polyalign
 EXEEXT = 
+FGREP = /bin/grep -F
 GREP = /bin/grep
 HAVE_MEMMOVE = 
 HAVE_STRERROR = 
@@ -129,15 +142,24 @@ INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
 ISAIXIA64 = 
 ISCYGWIN = 
 JAVA_OK = 
+LD = /usr/bin/ld -m elf_x86_64
 LDFLAGS = 
 LIBOBJS = 
 LIBS = -lm 
+LIBTOOL = $(SHELL) $(top_builddir)/libtool
+LIPO = 
 LN_S = ln -s
 LTLIBOBJS = 
-MAKEINFO = ${SHELL} /home/brandon/polyalign/missing --run makeinfo
+MAKEINFO = ${SHELL} /home/brandon/emboss/embassy/polyalign/missing --run makeinfo
+MANIFEST_TOOL = :
 MKDIR_P = /bin/mkdir -p
 NEEDAJAX = 
+NM = /usr/bin/nm -B
+NMEDIT = 
+OBJDUMP = objdump
 OBJEXT = o
+OTOOL = 
+OTOOL64 = 
 PACKAGE = PARA2
 PACKAGE_BUGREPORT = 
 PACKAGE_NAME = 
@@ -154,9 +176,10 @@ PCRE_POSIXLIB_VERSION = 0:0:0
 PCRE_VERSION = 4.3
 POSIX_MALLOC_THRESHOLD = -DPOSIX_MALLOC_THRESHOLD=10
 RANLIB = ranlib
+SED = /bin/sed
 SET_MAKE = 
 SHELL = /bin/bash
-STRIP = 
+STRIP = strip
 VERSION = 0.0.1
 XLIB =  -lX11 
 XMKMF = 
@@ -164,19 +187,25 @@ X_CFLAGS =
 X_EXTRA_LIBS = 
 X_LIBS = 
 X_PRE_LIBS =  -lSM -lICE
-abs_builddir = /home/brandon/polyalign/source
-abs_srcdir = /home/brandon/polyalign/source
-abs_top_builddir = /home/brandon/polyalign
-abs_top_srcdir = /home/brandon/polyalign
+abs_builddir = /home/brandon/emboss/embassy/polyalign/source
+abs_srcdir = /home/brandon/emboss/embassy/polyalign/source
+abs_top_builddir = /home/brandon/emboss/embassy/polyalign
+abs_top_srcdir = /home/brandon/emboss/embassy/polyalign
+ac_ct_AR = ar
 ac_ct_CC = gcc
 ac_ct_CXX = g++
+ac_ct_DUMPBIN = 
 am__include = include
 am__leading_dot = .
 am__quote = 
 am__tar = $${TAR-tar} chof - "$$tardir"
 am__untar = $${TAR-tar} xf -
 bindir = ${exec_prefix}/bin
+build = x86_64-unknown-linux-gnu
 build_alias = 
+build_cpu = x86_64
+build_os = linux-gnu
+build_vendor = unknown
 builddir = .
 datadir = ${datarootdir}
 datarootdir = ${prefix}/share
@@ -185,11 +214,15 @@ dvidir = ${docdir}
 embprefix = /usr/local
 exec_prefix = ${prefix}
 havejavac = 
+host = x86_64-unknown-linux-gnu
 host_alias = 
+host_cpu = x86_64
+host_os = linux-gnu
+host_vendor = unknown
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /home/brandon/polyalign/install-sh
+install_sh = ${SHELL} /home/brandon/emboss/embassy/polyalign/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
@@ -219,12 +252,12 @@ INCLUDES = -I../include -I../../../nucleus -I../../../ajax -I../../../plplot
 ###AM_CXXFLAGS = ${AM_CFLAGS}
 ##AM_CXXFLAGS = ${AM_CFLAGS}
 para2_SOURCES = para2.cc alignment.cc
-#LDADD = -L${embprefix}/lib -lnucleus -lajax -leplplot $(XLIB)
-LDADD = ../../../nucleus/libnucleus.la ../../../ajax/libajax.la ../../../plplot/libeplplot.la $(XLIB)
+#LDADD = -L${embprefix}/lib -lnucleus -lajax -leplplot -lgmp -lgmpxx $(XLIB)
+LDADD = ../../../nucleus/libnucleus.la ../../../ajax/libajax.la ../../../plplot/libeplplot.la -lgmp -lgmpxx $(XLIB)
 all: all-am
 
 .SUFFIXES:
-.SUFFIXES: .cc .o .obj
+.SUFFIXES: .cc .lo .o .obj
 $(srcdir)/Makefile.in:  $(srcdir)/Makefile.am  $(am__configure_deps)
 	@for dep in $?; do \
 	  case '$(am__configure_deps)' in \
@@ -264,7 +297,7 @@ install-binPROGRAMS: $(bin_PROGRAMS)
 	fi; \
 	for p in $$list; do echo "$$p $$p"; done | \
 	sed 's/$(EXEEXT)$$//' | \
-	while read p p1; do if test -f $$p; \
+	while read p p1; do if test -f $$p || test -f $$p1; \
 	  then echo "$$p"; echo "$$p"; else :; fi; \
 	done | \
 	sed -e 'p;s,.*/,,;n;h' -e 's|.*|.|' \
@@ -278,8 +311,8 @@ install-binPROGRAMS: $(bin_PROGRAMS)
 	while read type dir files; do \
 	    if test "$$dir" = .; then dir=; else dir=/$$dir; fi; \
 	    test -z "$$files" || { \
-	      echo " $(INSTALL_PROGRAM_ENV) $(INSTALL_PROGRAM) $$files '$(DESTDIR)$(bindir)$$dir'"; \
-	      $(INSTALL_PROGRAM_ENV) $(INSTALL_PROGRAM) $$files "$(DESTDIR)$(bindir)$$dir" || exit $$?; \
+	    echo " $(INSTALL_PROGRAM_ENV) $(LIBTOOL) $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=install $(INSTALL_PROGRAM) $$files '$(DESTDIR)$(bindir)$$dir'"; \
+	    $(INSTALL_PROGRAM_ENV) $(LIBTOOL) $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=install $(INSTALL_PROGRAM) $$files "$(DESTDIR)$(bindir)$$dir" || exit $$?; \
 	    } \
 	; done
 
@@ -294,7 +327,13 @@ uninstall-binPROGRAMS:
 	cd "$(DESTDIR)$(bindir)" && rm -f $$files
 
 clean-binPROGRAMS:
-	-test -z "$(bin_PROGRAMS)" || rm -f $(bin_PROGRAMS)
+	@list='$(bin_PROGRAMS)'; test -n "$$list" || exit 0; \
+	echo " rm -f" $$list; \
+	rm -f $$list || exit $$?; \
+	test -n "$(EXEEXT)" || exit 0; \
+	list=`for p in $$list; do echo "$$p"; done | sed 's/$(EXEEXT)$$//'`; \
+	echo " rm -f" $$list; \
+	rm -f $$list
 para2$(EXEEXT): $(para2_OBJECTS) $(para2_DEPENDENCIES) $(EXTRA_para2_DEPENDENCIES) 
 	@rm -f para2$(EXEEXT)
 	$(CXXLINK) $(para2_OBJECTS) $(para2_LDADD) $(LIBS)
@@ -321,6 +360,19 @@ include ./$(DEPDIR)/para2.Po
 #	source='$<' object='$@' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
 #	$(CXXCOMPILE) -c -o $@ `$(CYGPATH_W) '$<'`
+
+.cc.lo:
+	$(LTCXXCOMPILE) -MT $@ -MD -MP -MF $(DEPDIR)/$*.Tpo -c -o $@ $<
+	$(am__mv) $(DEPDIR)/$*.Tpo $(DEPDIR)/$*.Plo
+#	source='$<' object='$@' libtool=yes \
+#	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
+#	$(LTCXXCOMPILE) -c -o $@ $<
+
+mostlyclean-libtool:
+	-rm -f *.lo
+
+clean-libtool:
+	-rm -rf .libs _libs
 
 ID: $(HEADERS) $(SOURCES) $(LISP) $(TAGS_FILES)
 	list='$(SOURCES) $(HEADERS) $(LISP) $(TAGS_FILES)'; \
@@ -443,7 +495,7 @@ maintainer-clean-generic:
 	@echo "it deletes files that may require special tools to rebuild."
 clean: clean-am
 
-clean-am: clean-binPROGRAMS clean-generic mostlyclean-am
+clean-am: clean-binPROGRAMS clean-generic clean-libtool mostlyclean-am
 
 distclean: distclean-am
 	-rm -rf ./$(DEPDIR)
@@ -498,7 +550,8 @@ maintainer-clean-am: distclean-am maintainer-clean-generic
 
 mostlyclean: mostlyclean-am
 
-mostlyclean-am: mostlyclean-compile mostlyclean-generic
+mostlyclean-am: mostlyclean-compile mostlyclean-generic \
+	mostlyclean-libtool
 
 pdf: pdf-am
 
@@ -513,17 +566,18 @@ uninstall-am: uninstall-binPROGRAMS
 .MAKE: install-am install-strip
 
 .PHONY: CTAGS GTAGS all all-am check check-am clean clean-binPROGRAMS \
-	clean-generic ctags distclean distclean-compile \
-	distclean-generic distclean-tags distdir dvi dvi-am html \
-	html-am info info-am install install-am install-binPROGRAMS \
-	install-data install-data-am install-dvi install-dvi-am \
-	install-exec install-exec-am install-html install-html-am \
-	install-info install-info-am install-man install-pdf \
-	install-pdf-am install-ps install-ps-am install-strip \
-	installcheck installcheck-am installdirs maintainer-clean \
-	maintainer-clean-generic mostlyclean mostlyclean-compile \
-	mostlyclean-generic pdf pdf-am ps ps-am tags uninstall \
-	uninstall-am uninstall-binPROGRAMS
+	clean-generic clean-libtool ctags distclean distclean-compile \
+	distclean-generic distclean-libtool distclean-tags distdir dvi \
+	dvi-am html html-am info info-am install install-am \
+	install-binPROGRAMS install-data install-data-am install-dvi \
+	install-dvi-am install-exec install-exec-am install-html \
+	install-html-am install-info install-info-am install-man \
+	install-pdf install-pdf-am install-ps install-ps-am \
+	install-strip installcheck installcheck-am installdirs \
+	maintainer-clean maintainer-clean-generic mostlyclean \
+	mostlyclean-compile mostlyclean-generic mostlyclean-libtool \
+	pdf pdf-am ps ps-am tags uninstall uninstall-am \
+	uninstall-binPROGRAMS
 
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
