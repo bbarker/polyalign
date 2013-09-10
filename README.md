@@ -34,7 +34,7 @@ cd embassy
 
 4) If you downloaded a zip file:
 
-unzip <Download Location>/polyalign-master.zip
+unzip Download_Location/polyalign-master.zip
 
 mv polyalign-master polyalign
 
