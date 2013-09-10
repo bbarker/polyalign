@@ -1,0 +1,4967 @@
+Parametric Needleman-Wunsch global alignment.
+Test4
+Diff: 1000, 1014
+Test4
+Diff: 500, 514
+Test4
+Diff: 1500, 1518
+Test4
+Diff: 250, 287
+Test4
+Diff: 1250, 1249
+Test4
+Diff: 750, 763
+Test4
+Diff: 1750, 1759
+Test4
+Diff: 125, 140
+Test4
+Diff: 1125, 1138
+Test4
+Diff: 1625, 1643
+Test4
+Diff: 875, 889
+Test4
+Diff: 1875, 1875
+Test4
+Diff: 625, 638
+Test4
+Diff: 375, 389
+Test4
+Diff: 1375, 1390
+Test4
+Diff: 63, 69
+Test4
+Diff: 1063, 1076
+Test4
+Diff: 813, 827
+Test4
+Diff: 1313, 1317
+Test4
+Diff: 438, 451
+Test4
+Diff: 1438, 1451
+Test4
+Diff: 313, 345
+Test4
+Diff: 688, 700
+Test4
+Diff: 563, 576
+Test4
+Diff: 1938, 1942
+Test4
+Diff: 1813, 1809
+delete a_i*a_i*+1
+Test4
+Diff: 1688, 1702
+Test4
+Diff: 938, 951
+Test4
+Diff: 1563, 1580
+Test4
+Diff: 188, 215
+Test4
+Diff: 1188, 1198
+Test4
+Diff: 32, 38
+Test4
+Diff: 1032, 1045
+Test4
+Diff: 1282, 1283
+Test4
+Diff: 657, 669
+Test4
+Diff: 1157, 1171
+Test4
+Diff: 219, 248
+Test4
+Diff: 1219, 1219
+Test4
+Diff: 157, 185
+Test4
+Diff: 1594, 1612
+Test4
+Diff: 1532, 1549
+Test4
+Diff: 969, 983
+Test4
+Diff: 907, 920
+Test4
+Diff: 1719, 1729
+Test4
+Diff: 1657, 1671
+Test4
+Diff: 1845, 1839
+Test4
+Diff: 1781, 1786
+delete a_i*a_i*+1
+Test4
+Diff: 1969, 1969
+Test4
+Diff: 1907, 1911
+Test4
+Diff: 594, 606
+Test4
+Diff: 532, 545
+Test4
+Diff: 344, 364
+Test4
+Diff: 719, 732
+Test4
+Diff: 282, 318
+Test4
+Diff: 1469, 1478
+Test4
+Diff: 1407, 1420
+Test4
+Diff: 469, 483
+Test4
+Diff: 407, 420
+Test4
+Diff: 844, 857
+Test4
+Diff: 1344, 1355
+Test4
+Diff: 782, 796
+Test4
+Diff: 94, 101
+Test4
+Diff: 1094, 1106
+Test4
+Diff: 16, 24
+Test4
+Diff: 1016, 1029
+Test4
+Diff: 641, 653
+Test4
+Diff: 141, 156
+Test4
+Diff: 1765, 1773
+Test4
+Diff: 1079, 1091
+Test4
+Diff: 110, 117
+Test4
+Diff: 1110, 1123
+Test4
+Diff: 79, 86
+Test4
+Diff: 798, 811
+Test4
+Diff: 766, 780
+Test4
+Diff: 1360, 1372
+Test4
+Diff: 1329, 1337
+Test4
+Diff: 860, 874
+Test4
+Diff: 829, 842
+Test4
+Diff: 423, 435
+Test4
+Diff: 391, 404
+Test4
+Diff: 485, 498
+Test4
+Diff: 454, 468
+Test4
+Diff: 1423, 1437
+Test4
+Diff: 1391, 1404
+Test4
+Diff: 1485, 1494
+Test4
+Diff: 1454, 1466
+Test4
+Diff: 298, 331
+Test4
+Diff: 266, 302
+Test4
+Diff: 735, 747
+Test4
+Diff: 704, 717
+Test4
+Diff: 360, 375
+Test4
+Diff: 329, 356
+delete a_i*a_i*+1
+Test4
+Diff: 548, 560
+Test4
+Diff: 516, 529
+Test4
+Diff: 610, 623
+Test4
+Diff: 579, 591
+Test4
+Diff: 1923, 1927
+Test4
+Diff: 1891, 1895
+Test4
+Diff: 1985, 1986
+Test4
+Diff: 1954, 1955
+Test4
+Diff: 1860, 1854
+Test4
+Diff: 1797, 1799
+Test4
+Diff: 1830, 1824
+Test4
+Diff: 1673, 1686
+Test4
+Diff: 1641, 1657
+Test4
+Diff: 1735, 1743
+Test4
+Diff: 1704, 1717
+Test4
+Diff: 923, 935
+Test4
+Diff: 891, 904
+Test4
+Diff: 985, 998
+Test4
+Diff: 954, 968
+Test4
+Diff: 1548, 1564
+Test4
+Diff: 1516, 1533
+Test4
+Diff: 1610, 1627
+Test4
+Diff: 1579, 1597
+Test4
+Diff: 1235, 1233
+Test4
+Diff: 173, 202
+Test4
+Diff: 1204, 1205
+delete a_i*a_i*+1
+Test4
+Diff: 235, 263
+Test4
+Diff: 204, 231
+Test4
+Diff: 1173, 1185
+Test4
+Diff: 1141, 1155
+Test4
+Diff: 1298, 1300
+Test4
+Diff: 673, 684
+Test4
+Diff: 1266, 1266
+Test4
+Diff: 48, 55
+Test4
+Diff: 1048, 1060
+Test4
+Diff: 8, 17
+Test4
+Diff: 1008, 1021
+Test4
+Diff: 133, 148
+Test4
+Diff: 1102, 1115
+Test4
+Diff: 415, 427
+Test4
+Diff: 602, 615
+Test4
+Diff: 1040, 1052
+Test4
+Diff: 56, 62
+Test4
+Diff: 1056, 1069
+Test4
+Diff: 40, 47
+Test4
+Diff: 1274, 1272
+Test4
+Diff: 1258, 1259
+Test4
+Diff: 681, 693
+Test4
+Diff: 665, 676
+Test4
+Diff: 1306, 1308
+Test4
+Diff: 1290, 1290
+Test4
+Diff: 1149, 1162
+Test4
+Diff: 1133, 1147
+Test4
+Diff: 1181, 1193
+Test4
+Diff: 1165, 1178
+Test4
+Diff: 212, 238
+Test4
+Diff: 196, 222
+Test4
+Diff: 243, 273
+Test4
+Diff: 227, 254
+Test4
+Diff: 1212, 1213
+Test4
+Diff: 1196, 1205
+Test4
+Diff: 181, 210
+Test4
+Diff: 165, 192
+Test4
+Diff: 1243, 1242
+Test4
+Diff: 1227, 1225
+Test4
+Diff: 1587, 1604
+Test4
+Diff: 1571, 1589
+Test4
+Diff: 1618, 1636
+Test4
+Diff: 1602, 1619
+Test4
+Diff: 1524, 1540
+Test4
+Diff: 1508, 1525
+Test4
+Diff: 1556, 1573
+Test4
+Diff: 1540, 1556
+Test4
+Diff: 962, 975
+Test4
+Diff: 946, 960
+Test4
+Diff: 993, 1007
+Test4
+Diff: 977, 990
+Test4
+Diff: 899, 911
+Test4
+Diff: 883, 896
+Test4
+Diff: 931, 944
+Test4
+Diff: 915, 927
+Test4
+Diff: 1712, 1725
+Test4
+Diff: 1696, 1707
+Test4
+Diff: 1743, 1752
+Test4
+Diff: 1727, 1734
+delete a_i*a_i*+1
+Test4
+Diff: 1649, 1665
+Test4
+Diff: 1633, 1650
+Test4
+Diff: 1681, 1695
+Test4
+Diff: 1665, 1678
+Test4
+Diff: 1838, 1834
+Test4
+Diff: 1822, 1816
+Test4
+Diff: 1805, 1806
+delete a_i*a_i*+1
+Test4
+Diff: 1790, 1792
+Test4
+Diff: 1868, 1862
+Test4
+Diff: 1853, 1847
+Test4
+Diff: 1962, 1962
+Test4
+Diff: 1946, 1949
+Test4
+Diff: 1993, 1993
+Test4
+Diff: 1977, 1976
+Test4
+Diff: 1899, 1905
+Test4
+Diff: 1883, 1893
+Test4
+Diff: 1931, 1934
+Test4
+Diff: 1915, 1919
+Test4
+Diff: 587, 598
+Test4
+Diff: 571, 583
+Test4
+Diff: 524, 536
+Test4
+Diff: 618, 630
+Test4
+Diff: 508, 521
+Test4
+Diff: 556, 569
+Test4
+Diff: 540, 552
+Test4
+Diff: 337, 361
+delete a_i*a_i*+1
+Test4
+Diff: 321, 353
+Test4
+Diff: 368, 382
+Test4
+Diff: 352, 371
+Test4
+Diff: 712, 724
+Test4
+Diff: 696, 709
+Test4
+Diff: 743, 756
+Test4
+Diff: 727, 739
+Test4
+Diff: 274, 311
+Test4
+Diff: 258, 294
+Test4
+Diff: 306, 338
+Test4
+Diff: 290, 324
+Test4
+Diff: 1462, 1471
+Test4
+Diff: 1446, 1458
+Test4
+Diff: 1493, 1503
+Test4
+Diff: 1477, 1485
+Test4
+Diff: 1399, 1411
+Test4
+Diff: 1383, 1396
+Test4
+Diff: 1431, 1444
+Test4
+Diff: 1415, 1431
+Test4
+Diff: 462, 475
+Test4
+Diff: 446, 460
+Test4
+Diff: 493, 507
+Test4
+Diff: 477, 490
+Test4
+Diff: 399, 411
+Test4
+Diff: 383, 396
+Test4
+Diff: 837, 849
+Test4
+Diff: 431, 444
+Test4
+Diff: 821, 834
+Test4
+Diff: 868, 881
+Test4
+Diff: 852, 866
+Test4
+Diff: 1337, 1346
+Test4
+Diff: 1321, 1329
+Test4
+Diff: 1368, 1379
+Test4
+Diff: 1352, 1367
+Test4
+Diff: 774, 787
+Test4
+Diff: 758, 772
+Test4
+Diff: 806, 820
+Test4
+Diff: 790, 803
+Test4
+Diff: 87, 94
+Test4
+Diff: 71, 80
+Test4
+Diff: 118, 136
+Test4
+Diff: 1118, 1130
+Test4
+Diff: 102, 108
+Test4
+Diff: 1087, 1098
+Test4
+Diff: 1071, 1083
+Test4
+Diff: 1773, 1781
+Test4
+Diff: 1758, 1766
+Test4
+Diff: 649, 660
+Test4
+Diff: 149, 167
+Test4
+Diff: 633, 645
+Test4
+Diff: 24, 30
+Test4
+Diff: 1024, 1036
+Test4
+Diff: 4, 13
+Test4
+Diff: 1004, 1017
+Test4
+Diff: 1098, 1111
+Test4
+Diff: 52, 58
+Test4
+Diff: 1286, 1286
+Test4
+Diff: 1567, 1585
+Test4
+Diff: 1973, 1972
+Test4
+Diff: 1020, 1032
+Test4
+Diff: 28, 36
+Test4
+Diff: 1028, 1041
+Test4
+Diff: 20, 28
+Test4
+Diff: 637, 648
+Test4
+Diff: 629, 641
+Test4
+Diff: 153, 170
+Test4
+Diff: 145, 163
+Test4
+Diff: 653, 665
+Test4
+Diff: 645, 656
+Test4
+Diff: 1762, 1772
+Test4
+Diff: 1754, 1762
+Test4
+Diff: 1777, 1785
+Test4
+Diff: 1769, 1778
+Test4
+Diff: 1075, 1086
+Test4
+Diff: 1067, 1079
+Test4
+Diff: 1091, 1103
+Test4
+Diff: 1083, 1094
+Test4
+Diff: 106, 113
+Test4
+Diff: 98, 103
+Test4
+Diff: 1122, 1135
+Test4
+Diff: 1114, 1126
+Test4
+Diff: 122, 139
+Test4
+Diff: 114, 133
+Test4
+Diff: 75, 83
+Test4
+Diff: 67, 74
+Test4
+Diff: 91, 98
+Test4
+Diff: 83, 90
+Test4
+Diff: 794, 806
+Test4
+Diff: 786, 799
+Test4
+Diff: 810, 823
+Test4
+Diff: 802, 816
+Test4
+Diff: 762, 775
+Test4
+Diff: 754, 768
+Test4
+Diff: 778, 792
+Test4
+Diff: 770, 783
+Test4
+Diff: 1356, 1370
+Test4
+Diff: 1348, 1363
+Test4
+Diff: 1372, 1383
+Test4
+Diff: 1364, 1375
+Test4
+Diff: 1325, 1332
+Test4
+Diff: 1317, 1319
+Test4
+Diff: 1341, 1352
+Test4
+Diff: 1333, 1340
+Test4
+Diff: 856, 869
+Test4
+Diff: 848, 862
+Test4
+Diff: 872, 886
+Test4
+Diff: 864, 877
+Test4
+Diff: 825, 837
+Test4
+Diff: 817, 830
+Test4
+Diff: 435, 447
+Test4
+Diff: 427, 440
+Test4
+Diff: 841, 854
+Test4
+Diff: 833, 845
+Test4
+Diff: 387, 399
+Test4
+Diff: 379, 392
+Test4
+Diff: 403, 416
+Test4
+Diff: 395, 407
+Test4
+Diff: 481, 493
+Test4
+Diff: 473, 486
+Test4
+Diff: 497, 510
+Test4
+Diff: 489, 503
+Test4
+Diff: 450, 463
+Test4
+Diff: 442, 456
+Test4
+Diff: 466, 480
+Test4
+Diff: 458, 471
+Test4
+Diff: 1419, 1436
+Test4
+Diff: 1411, 1428
+Test4
+Diff: 1435, 1448
+Test4
+Diff: 1427, 1442
+Test4
+Diff: 1387, 1399
+Test4
+Diff: 1379, 1392
+Test4
+Diff: 1403, 1416
+Test4
+Diff: 1395, 1407
+Test4
+Diff: 1481, 1490
+Test4
+Diff: 1473, 1481
+Test4
+Diff: 1497, 1508
+Test4
+Diff: 1489, 1499
+Test4
+Diff: 1450, 1460
+Test4
+Diff: 1442, 1454
+Test4
+Diff: 1466, 1475
+Test4
+Diff: 1458, 1469
+Test4
+Diff: 294, 327
+Test4
+Diff: 286, 320
+Test4
+Diff: 310, 341
+Test4
+Diff: 302, 334
+Test4
+Diff: 262, 297
+Test4
+Diff: 254, 289
+Test4
+Diff: 278, 314
+Test4
+Diff: 270, 307
+Test4
+Diff: 731, 742
+Test4
+Diff: 723, 735
+Test4
+Diff: 747, 759
+Test4
+Diff: 739, 752
+Test4
+Diff: 700, 712
+Test4
+Diff: 692, 705
+Test4
+Diff: 716, 729
+Test4
+Diff: 708, 720
+Test4
+Diff: 356, 375
+Test4
+Diff: 348, 367
+Test4
+Diff: 372, 386
+Test4
+Diff: 364, 378
+Test4
+Diff: 325, 355
+Test4
+Diff: 317, 348
+Test4
+Diff: 341, 363
+Test4
+Diff: 333, 361
+Test4
+Diff: 544, 555
+Test4
+Diff: 536, 548
+Test4
+Diff: 560, 572
+Test4
+Diff: 552, 565
+Test4
+Diff: 512, 524
+Test4
+Diff: 504, 517
+Test4
+Diff: 622, 635
+Test4
+Diff: 614, 626
+Test4
+Diff: 528, 541
+Test4
+Diff: 520, 532
+Test4
+Diff: 575, 586
+Test4
+Diff: 567, 579
+Test4
+Diff: 591, 603
+Test4
+Diff: 583, 594
+Test4
+Diff: 1919, 1922
+Test4
+Diff: 1911, 1914
+Test4
+Diff: 1935, 1937
+Test4
+Diff: 1927, 1933
+Test4
+Diff: 1887, 1895
+delete a_i*a_i*+1
+Test4
+Diff: 1879, 1889
+Test4
+Diff: 1903, 1907
+delete a_i*a_i*+1
+Test4
+Diff: 1895, 1900
+Test4
+Diff: 1997, 1997
+Test4
+Diff: 1981, 1984
+Test4
+Diff: 1989, 1989
+Test4
+Diff: 1950, 1951
+Test4
+Diff: 1942, 1948
+Test4
+Diff: 1966, 1966
+Test4
+Diff: 1958, 1956
+Test4
+Diff: 1857, 1851
+Test4
+Diff: 1849, 1843
+delete a_i*a_i*+1
+Test4
+Diff: 1872, 1866
+Test4
+Diff: 1864, 1857
+Test4
+Diff: 1794, 1796
+Test4
+Diff: 1786, 1789
+Test4
+Diff: 1809, 1808
+Test4
+Diff: 1801, 1805
+Test4
+Diff: 1826, 1820
+Test4
+Diff: 1818, 1812
+Test4
+Diff: 1842, 1838
+Test4
+Diff: 1834, 1828
+Test4
+Diff: 1669, 1681
+Test4
+Diff: 1661, 1674
+Test4
+Diff: 1685, 1699
+Test4
+Diff: 1677, 1691
+Test4
+Diff: 1637, 1654
+Test4
+Diff: 1629, 1646
+Test4
+Diff: 1653, 1667
+Test4
+Diff: 1645, 1661
+Test4
+Diff: 1732, 1738
+Test4
+Diff: 1723, 1734
+Test4
+Diff: 1747, 1755
+Test4
+Diff: 1739, 1748
+Test4
+Diff: 1700, 1711
+Test4
+Diff: 1692, 1705
+Test4
+Diff: 1716, 1729
+Test4
+Diff: 1708, 1719
+Test4
+Diff: 919, 930
+Test4
+Diff: 911, 923
+Test4
+Diff: 935, 947
+Test4
+Diff: 927, 940
+Test4
+Diff: 887, 899
+Test4
+Diff: 879, 892
+Test4
+Diff: 903, 916
+Test4
+Diff: 895, 907
+Test4
+Diff: 981, 993
+Test4
+Diff: 973, 986
+Test4
+Diff: 997, 1010
+Test4
+Diff: 989, 1003
+Test4
+Diff: 950, 963
+Test4
+Diff: 942, 956
+Test4
+Diff: 966, 980
+Test4
+Diff: 958, 971
+Test4
+Diff: 1544, 1559
+Test4
+Diff: 1536, 1552
+Test4
+Diff: 1560, 1576
+Test4
+Diff: 1552, 1569
+Test4
+Diff: 1512, 1528
+Test4
+Diff: 1504, 1521
+Test4
+Diff: 1528, 1545
+Test4
+Diff: 1520, 1536
+Test4
+Diff: 1606, 1622
+Test4
+Diff: 1598, 1615
+Test4
+Diff: 1622, 1642
+Test4
+Diff: 1614, 1632
+Test4
+Diff: 1591, 1609
+Test4
+Diff: 1575, 1592
+Test4
+Diff: 1583, 1600
+Test4
+Diff: 1231, 1229
+Test4
+Diff: 1223, 1221
+Test4
+Diff: 1247, 1246
+Test4
+Diff: 1239, 1238
+Test4
+Diff: 169, 197
+Test4
+Diff: 161, 188
+Test4
+Diff: 185, 212
+Test4
+Diff: 177, 207
+Test1
+delete A
+Test4
+Diff: 1192, 1202
+Test4
+Diff: 1216, 1216
+Test4
+Diff: 1209, 1208
+Test4
+Diff: 231, 259
+Test4
+Diff: 223, 250
+Test4
+Diff: 247, 284
+Test4
+Diff: 239, 266
+Test4
+Diff: 200, 227
+Test4
+Diff: 192, 218
+Test4
+Diff: 216, 242
+Test4
+Diff: 208, 237
+Test4
+Diff: 1169, 1181
+Test4
+Diff: 1161, 1174
+Test4
+Diff: 1185, 1195
+Test4
+Diff: 1177, 1190
+Test4
+Diff: 1137, 1150
+Test4
+Diff: 1129, 1143
+Test4
+Diff: 1153, 1167
+Test4
+Diff: 1145, 1158
+Test4
+Diff: 1310, 1312
+Test4
+Diff: 1294, 1296
+Test4
+Diff: 1302, 1303
+Test4
+Diff: 669, 679
+Test4
+Diff: 661, 672
+Test4
+Diff: 685, 696
+Test4
+Diff: 677, 689
+Test4
+Diff: 1262, 1262
+Test4
+Diff: 1254, 1253
+Test4
+Diff: 1278, 1278
+Test4
+Diff: 1270, 1268
+Test4
+Diff: 44, 51
+Test4
+Diff: 36, 43
+Test4
+Diff: 1060, 1072
+Test4
+Diff: 1052, 1065
+Test4
+Diff: 1044, 1055
+Test4
+Diff: 60, 65
+Test4
+Diff: 1036, 1048
+Test4
+Diff: 606, 618
+Test4
+Diff: 598, 611
+Test4
+Diff: 419, 430
+Test4
+Diff: 411, 423
+Test4
+Diff: 137, 152
+Test4
+Diff: 1106, 1118
+Test4
+Diff: 129, 143
+Test4
+Diff: 12, 20
+Test4
+Diff: 1012, 1024
+Test4
+Diff: 2, 6
+Test4
+Diff: 1002, 1015
+Test4
+Diff: 50, 56
+Test4
+Diff: 1018, 1030
+Test4
+Diff: 651, 663
+Test4
+Diff: 73, 81
+Test4
+Diff: 401, 414
+Test4
+Diff: 1917, 1920
+Test4
+Diff: 1014, 1027
+Test4
+Diff: 1010, 1022
+Test4
+Diff: 14, 22
+Test4
+Diff: 10, 18
+Test4
+Diff: 131, 146
+Test4
+Diff: 127, 141
+Test4
+Diff: 1108, 1121
+Test4
+Diff: 1104, 1116
+Test4
+Diff: 139, 154
+Test4
+Diff: 135, 150
+Test4
+Diff: 413, 424
+Test4
+Diff: 409, 421
+Test4
+Diff: 421, 433
+Test4
+Diff: 417, 428
+Test4
+Diff: 600, 612
+Test4
+Diff: 596, 609
+Test4
+Diff: 608, 621
+Test4
+Diff: 604, 616
+Test4
+Diff: 1038, 1049
+Test4
+Diff: 1034, 1046
+Test4
+Diff: 62, 66
+Test4
+Diff: 58, 63
+Test4
+Diff: 1046, 1058
+Test4
+Diff: 1042, 1053
+Test4
+Diff: 1054, 1066
+Test4
+Diff: 1050, 1063
+Test4
+Diff: 1062, 1075
+Test4
+Diff: 1058, 1070
+Test4
+Diff: 38, 45
+Test4
+Diff: 34, 43
+Test4
+Diff: 46, 54
+Test4
+Diff: 42, 48
+Test4
+Diff: 1272, 1269
+Test4
+Diff: 1268, 1267
+Test4
+Diff: 1280, 1281
+Test4
+Diff: 1276, 1276
+Test4
+Diff: 1256, 1256
+Test4
+Diff: 1252, 1250
+Test4
+Diff: 1264, 1264
+Test4
+Diff: 1260, 1260
+Test4
+Diff: 679, 690
+Test4
+Diff: 675, 687
+Test4
+Diff: 687, 699
+Test4
+Diff: 683, 694
+Test4
+Diff: 663, 673
+Test4
+Diff: 659, 670
+Test4
+Diff: 671, 682
+Test4
+Diff: 667, 677
+Test4
+Diff: 1304, 1305
+Test4
+Diff: 1300, 1301
+Test4
+Diff: 1296, 1299
+Test4
+Diff: 1292, 1293
+Test4
+Diff: 1312, 1316
+Test4
+Diff: 1308, 1310
+Test4
+Diff: 1147, 1159
+Test4
+Diff: 1143, 1156
+Test4
+Diff: 1155, 1168
+Test4
+Diff: 1151, 1165
+Test4
+Diff: 1131, 1144
+Test4
+Diff: 1127, 1141
+Test4
+Diff: 1139, 1153
+Test4
+Diff: 1135, 1148
+Test4
+Diff: 1179, 1193
+Test4
+Diff: 1175, 1188
+Test4
+Diff: 1187, 1198
+Test4
+Diff: 1183, 1195
+Test4
+Diff: 1163, 1175
+Test4
+Diff: 1159, 1174
+Test4
+Diff: 1171, 1183
+Test4
+Diff: 1167, 1179
+Test1
+delete A
+Test4
+Diff: 206, 235
+Test4
+Diff: 218, 244
+Test4
+Diff: 214, 239
+Test4
+Diff: 194, 220
+Test4
+Diff: 190, 216
+Test4
+Diff: 202, 229
+Test4
+Diff: 198, 225
+Test4
+Diff: 241, 269
+Test4
+Diff: 237, 264
+Test4
+Diff: 249, 285
+Test4
+Diff: 245, 281
+Test4
+Diff: 225, 251
+Test4
+Diff: 221, 249
+Test4
+Diff: 233, 260
+Test4
+Diff: 229, 257
+Test4
+Diff: 1211, 1210
+Test4
+Diff: 1207, 1206
+Test4
+Diff: 1218, 1218
+Test4
+Diff: 1214, 1215
+Test4
+Diff: 1194, 1203
+Test4
+Diff: 1190, 1201
+Test4
+Diff: 179, 208
+Test4
+Diff: 175, 206
+Test4
+Diff: 187, 215
+Test4
+Diff: 183, 211
+Test4
+Diff: 163, 190
+Test4
+Diff: 159, 188
+Test4
+Diff: 171, 200
+Test4
+Diff: 167, 195
+Test4
+Diff: 1241, 1240
+Test4
+Diff: 1237, 1237
+Test4
+Diff: 1249, 1248
+Test4
+Diff: 1245, 1243
+Test4
+Diff: 1225, 1222
+Test4
+Diff: 1221, 1221
+Test4
+Diff: 1233, 1231
+Test4
+Diff: 1229, 1226
+Test4
+Diff: 1585, 1601
+Test4
+Diff: 1581, 1598
+Test4
+Diff: 1577, 1595
+Test4
+Diff: 1573, 1590
+Test4
+Diff: 1593, 1610
+Test4
+Diff: 1589, 1607
+Test4
+Diff: 1616, 1633
+Test4
+Diff: 1612, 1630
+Test1
+delete A
+Test4
+Diff: 1620, 1640
+Test4
+Diff: 1600, 1616
+Test4
+Diff: 1596, 1613
+Test4
+Diff: 1608, 1625
+Test4
+Diff: 1604, 1620
+Test4
+Diff: 1522, 1537
+Test4
+Diff: 1518, 1534
+Test4
+Diff: 1530, 1546
+Test4
+Diff: 1526, 1543
+Test4
+Diff: 1506, 1522
+Test4
+Diff: 1502, 1519
+Test4
+Diff: 1514, 1531
+Test4
+Diff: 1510, 1526
+Test4
+Diff: 1554, 1570
+Test4
+Diff: 1550, 1567
+Test4
+Diff: 1562, 1579
+Test4
+Diff: 1558, 1574
+Test4
+Diff: 1538, 1553
+Test4
+Diff: 1534, 1550
+Test4
+Diff: 1546, 1562
+Test4
+Diff: 1542, 1557
+Test4
+Diff: 960, 972
+Test4
+Diff: 956, 969
+Test4
+Diff: 968, 981
+Test4
+Diff: 964, 978
+Test4
+Diff: 944, 957
+Test4
+Diff: 940, 954
+Test4
+Diff: 952, 966
+Test4
+Diff: 948, 961
+Test4
+Diff: 991, 1004
+Test4
+Diff: 987, 1001
+Test4
+Diff: 999, 1013
+Test4
+Diff: 995, 1008
+Test4
+Diff: 975, 987
+Test4
+Diff: 971, 984
+Test4
+Diff: 983, 996
+Test4
+Diff: 979, 991
+Test4
+Diff: 897, 908
+Test4
+Diff: 893, 905
+Test4
+Diff: 905, 917
+Test4
+Diff: 901, 914
+Test4
+Diff: 881, 893
+Test4
+Diff: 877, 890
+Test4
+Diff: 889, 902
+Test4
+Diff: 885, 897
+Test4
+Diff: 929, 941
+Test4
+Diff: 925, 938
+Test4
+Diff: 937, 950
+Test4
+Diff: 933, 945
+Test4
+Diff: 913, 924
+Test4
+Diff: 909, 921
+Test4
+Diff: 921, 933
+Test4
+Diff: 917, 928
+Test4
+Diff: 1710, 1723
+Test4
+Diff: 1706, 1719
+Test1
+delete A
+Test4
+Diff: 1714, 1729
+Test4
+Diff: 1694, 1707
+Test4
+Diff: 1690, 1703
+Test4
+Diff: 1702, 1715
+Test4
+Diff: 1698, 1709
+Test4
+Diff: 1741, 1750
+Test4
+Diff: 1737, 1746
+Test4
+Diff: 1749, 1757
+Test4
+Diff: 1745, 1755
+Test1
+delete A
+Test4
+Diff: 1721, 1732
+Test4
+Diff: 1734, 1740
+Test4
+Diff: 1730, 1735
+Test4
+Diff: 1647, 1662
+Test4
+Diff: 1643, 1661
+Test4
+Diff: 1655, 1668
+Test4
+Diff: 1651, 1667
+Test4
+Diff: 1631, 1648
+Test4
+Diff: 1627, 1644
+Test4
+Diff: 1639, 1656
+Test4
+Diff: 1635, 1654
+Test4
+Diff: 1679, 1693
+Test4
+Diff: 1675, 1689
+Test4
+Diff: 1687, 1701
+Test4
+Diff: 1683, 1699
+Test4
+Diff: 1663, 1676
+Test4
+Diff: 1659, 1672
+Test4
+Diff: 1671, 1684
+Test4
+Diff: 1667, 1681
+Test4
+Diff: 1836, 1830
+Test4
+Diff: 1832, 1825
+Test1
+delete A
+Test4
+Diff: 1840, 1835
+Test4
+Diff: 1820, 1814
+Test4
+Diff: 1816, 1812
+Test4
+Diff: 1828, 1822
+Test4
+Diff: 1824, 1818
+Test1
+delete A
+Test4
+Diff: 1799, 1804
+Test1
+delete A
+Test4
+Diff: 1808, 1807
+Test4
+Diff: 1788, 1790
+delete a_i*a_i*+1
+Test4
+Diff: 1784, 1787
+Test4
+Diff: 1796, 1798
+Test4
+Diff: 1792, 1795
+Test4
+Diff: 1866, 1862
+Test4
+Diff: 1862, 1857
+Test4
+Diff: 1874, 1868
+Test4
+Diff: 1870, 1864
+Test4
+Diff: 1852, 1844
+Test4
+Diff: 1847, 1842
+Test4
+Diff: 1859, 1853
+Test4
+Diff: 1855, 1849
+Test4
+Diff: 1960, 1960
+Test1
+delete A
+Test4
+Diff: 1968, 1968
+Test4
+Diff: 1964, 1963
+Test1
+delete A
+Test4
+Diff: 1940, 1945
+Test4
+Diff: 1952, 1954
+Test4
+Diff: 1948, 1950
+Test4
+Diff: 1991, 1991
+Test4
+Diff: 1987, 1989
+Test4
+Diff: 1983, 1986
+Test4
+Diff: 1979, 1982
+Test4
+Diff: 1999, 1999
+Test4
+Diff: 1995, 1996
+Test4
+Diff: 1897, 1903
+Test4
+Diff: 1893, 1898
+Test4
+Diff: 1906, 1908
+Test4
+Diff: 1901, 1906
+Test4
+Diff: 1881, 1893
+Test4
+Diff: 1877, 1886
+Test1
+delete A
+Test4
+Diff: 1885, 1894
+Test1
+delete A
+Test4
+Diff: 1925, 1931
+Test4
+Diff: 1937, 1941
+Test4
+Diff: 1933, 1937
+Test4
+Diff: 1913, 1916
+Test4
+Diff: 1909, 1912
+Test4
+Diff: 585, 595
+Test4
+Diff: 1921, 1925
+Test4
+Diff: 581, 592
+Test4
+Diff: 593, 604
+Test4
+Diff: 589, 601
+Test4
+Diff: 569, 580
+Test4
+Diff: 565, 577
+Test4
+Diff: 577, 589
+Test4
+Diff: 573, 584
+Test4
+Diff: 522, 533
+Test4
+Diff: 518, 530
+Test4
+Diff: 530, 542
+Test4
+Diff: 526, 539
+Test4
+Diff: 616, 627
+Test4
+Diff: 612, 624
+Test4
+Diff: 624, 636
+Test4
+Diff: 620, 633
+Test4
+Diff: 506, 518
+Test4
+Diff: 502, 515
+Test4
+Diff: 514, 527
+Test4
+Diff: 510, 522
+Test4
+Diff: 554, 566
+Test4
+Diff: 550, 563
+Test4
+Diff: 562, 575
+Test4
+Diff: 558, 570
+Test4
+Diff: 538, 549
+Test4
+Diff: 534, 546
+Test4
+Diff: 546, 558
+Test4
+Diff: 542, 553
+Test1
+delete A
+Test4
+Diff: 332, 357
+Test1
+delete A
+Test4
+Diff: 340, 362
+Test4
+Diff: 319, 350
+Test4
+Diff: 315, 348
+Test1
+delete A
+Test4
+Diff: 323, 354
+Test4
+Diff: 366, 380
+Test4
+Diff: 362, 376
+Test4
+Diff: 374, 388
+Test4
+Diff: 370, 386
+Test4
+Diff: 350, 369
+Test4
+Diff: 346, 366
+Test1
+delete A
+Test4
+Diff: 354, 375
+Test4
+Diff: 710, 721
+Test4
+Diff: 706, 718
+Test4
+Diff: 718, 730
+Test4
+Diff: 714, 727
+Test4
+Diff: 694, 706
+Test4
+Diff: 690, 703
+Test4
+Diff: 702, 715
+Test4
+Diff: 698, 710
+Test4
+Diff: 741, 753
+Test4
+Diff: 737, 750
+Test4
+Diff: 749, 762
+Test4
+Diff: 745, 757
+Test4
+Diff: 725, 736
+Test4
+Diff: 721, 733
+Test4
+Diff: 733, 745
+Test4
+Diff: 729, 740
+Test4
+Diff: 272, 309
+Test4
+Diff: 268, 305
+Test4
+Diff: 280, 316
+Test4
+Diff: 276, 312
+Test4
+Diff: 256, 290
+Test4
+Diff: 252, 288
+Test4
+Diff: 264, 300
+Test4
+Diff: 260, 295
+Test4
+Diff: 304, 335
+Test4
+Diff: 300, 332
+Test4
+Diff: 312, 343
+Test4
+Diff: 308, 339
+Test4
+Diff: 288, 321
+Test4
+Diff: 284, 319
+Test4
+Diff: 296, 328
+Test4
+Diff: 292, 325
+Test4
+Diff: 1460, 1470
+Test4
+Diff: 1456, 1469
+Test4
+Diff: 1468, 1477
+Test4
+Diff: 1464, 1475
+Test4
+Diff: 1444, 1456
+Test4
+Diff: 1440, 1452
+Test4
+Diff: 1452, 1461
+Test4
+Diff: 1448, 1459
+Test4
+Diff: 1491, 1500
+Test4
+Diff: 1487, 1497
+Test4
+Diff: 1499, 1511
+Test4
+Diff: 1495, 1506
+Test4
+Diff: 1475, 1482
+Test4
+Diff: 1471, 1479
+Test4
+Diff: 1483, 1491
+Test4
+Diff: 1479, 1488
+Test4
+Diff: 1397, 1408
+Test4
+Diff: 1393, 1405
+Test4
+Diff: 1405, 1417
+Test4
+Diff: 1401, 1414
+Test4
+Diff: 1381, 1393
+Test4
+Diff: 1377, 1391
+Test4
+Diff: 1389, 1402
+Test4
+Diff: 1385, 1397
+Test4
+Diff: 1429, 1443
+Test4
+Diff: 1425, 1438
+Test4
+Diff: 1437, 1450
+Test4
+Diff: 1433, 1447
+Test4
+Diff: 1413, 1431
+Test4
+Diff: 1409, 1423
+Test1
+delete A
+Test4
+Diff: 1417, 1435
+Test4
+Diff: 460, 472
+Test4
+Diff: 456, 469
+Test4
+Diff: 468, 481
+Test4
+Diff: 464, 478
+Test4
+Diff: 444, 457
+Test4
+Diff: 440, 454
+Test4
+Diff: 452, 466
+Test4
+Diff: 448, 461
+Test4
+Diff: 491, 504
+Test4
+Diff: 487, 501
+Test4
+Diff: 499, 513
+Test4
+Diff: 495, 508
+Test4
+Diff: 475, 487
+Test4
+Diff: 471, 484
+Test4
+Diff: 483, 496
+Test4
+Diff: 479, 491
+Test4
+Diff: 397, 408
+Test4
+Diff: 393, 405
+Test4
+Diff: 381, 393
+Test4
+Diff: 405, 417
+Test4
+Diff: 377, 390
+Test4
+Diff: 389, 402
+Test4
+Diff: 385, 397
+Test4
+Diff: 835, 846
+Test4
+Diff: 831, 843
+Test4
+Diff: 843, 855
+Test4
+Diff: 839, 852
+Test4
+Diff: 429, 441
+Test4
+Diff: 425, 438
+Test4
+Diff: 437, 450
+Test4
+Diff: 433, 445
+Test4
+Diff: 819, 831
+Test4
+Diff: 815, 828
+Test4
+Diff: 827, 840
+Test4
+Diff: 823, 835
+Test4
+Diff: 866, 878
+Test4
+Diff: 862, 875
+Test4
+Diff: 874, 887
+Test4
+Diff: 870, 884
+Test4
+Diff: 850, 863
+Test4
+Diff: 846, 860
+Test4
+Diff: 858, 872
+Test4
+Diff: 854, 867
+Test4
+Diff: 1335, 1344
+Test4
+Diff: 1331, 1340
+Test4
+Diff: 1343, 1353
+Test4
+Diff: 1339, 1351
+Test4
+Diff: 1319, 1322
+Test4
+Diff: 1315, 1319
+Test4
+Diff: 1327, 1335
+Test4
+Diff: 1323, 1330
+Test4
+Diff: 1366, 1377
+Test4
+Diff: 1362, 1373
+Test4
+Diff: 1374, 1386
+Test4
+Diff: 1370, 1383
+Test4
+Diff: 1350, 1367
+Test4
+Diff: 1346, 1361
+Test4
+Diff: 1358, 1372
+Test4
+Diff: 1354, 1370
+Test4
+Diff: 772, 784
+Test4
+Diff: 768, 781
+Test4
+Diff: 780, 793
+Test4
+Diff: 776, 790
+Test4
+Diff: 756, 769
+Test4
+Diff: 752, 766
+Test4
+Diff: 764, 778
+Test4
+Diff: 760, 773
+Test4
+Diff: 804, 817
+Test4
+Diff: 800, 814
+Test4
+Diff: 812, 826
+Test4
+Diff: 808, 821
+Test4
+Diff: 788, 800
+Test4
+Diff: 784, 797
+Test4
+Diff: 796, 809
+Test4
+Diff: 792, 804
+Test4
+Diff: 85, 92
+Test4
+Diff: 81, 87
+Test4
+Diff: 93, 100
+Test4
+Diff: 89, 95
+Test4
+Diff: 69, 77
+Test4
+Diff: 65, 72
+Test4
+Diff: 116, 134
+Test4
+Diff: 77, 84
+Test4
+Diff: 112, 120
+Test1
+delete A
+Test4
+Diff: 120, 137
+Test4
+Diff: 1116, 1127
+Test4
+Diff: 1112, 1124
+Test4
+Diff: 1124, 1136
+Test4
+Diff: 1120, 1133
+Test4
+Diff: 100, 106
+Test4
+Diff: 96, 103
+Test4
+Diff: 108, 114
+Test4
+Diff: 104, 111
+Test4
+Diff: 1085, 1095
+Test4
+Diff: 1081, 1092
+Test4
+Diff: 1093, 1104
+Test4
+Diff: 1089, 1101
+Test4
+Diff: 1069, 1080
+Test4
+Diff: 1065, 1077
+Test4
+Diff: 1077, 1089
+Test4
+Diff: 1073, 1084
+Test4
+Diff: 1771, 1779
+Test4
+Diff: 1767, 1776
+Test1
+delete A
+Test4
+Diff: 1775, 1783
+Test4
+Diff: 1756, 1766
+Test4
+Diff: 1752, 1760
+Test1
+delete A
+Test4
+Diff: 1760, 1769
+Test4
+Diff: 647, 657
+Test4
+Diff: 643, 654
+Test4
+Diff: 147, 165
+Test4
+Diff: 655, 666
+Test4
+Diff: 143, 161
+Test4
+Diff: 155, 172
+Test4
+Diff: 151, 168
+Test4
+Diff: 631, 642
+Test4
+Diff: 627, 639
+Test4
+Diff: 639, 651
+Test4
+Diff: 635, 646
+Test4
+Diff: 22, 29
+Test4
+Diff: 18, 28
+Test4
+Diff: 1030, 1042
+Test4
+Diff: 1026, 1039
+Test4
+Diff: 30, 38
+Test4
+Diff: 26, 33
+Test4
+Diff: 1975, 1973
+Test4
+Diff: 1022, 1033
+Test4
+Diff: 1971, 1971
+Test4
+Diff: 1569, 1586
+Test4
+Diff: 1565, 1583
+Test4
+Diff: 1288, 1288
+Test4
+Diff: 1284, 1284
+Test4
+Diff: 1100, 1112
+Test4
+Diff: 54, 60
+Test4
+Diff: 1096, 1109
+Test4
+Diff: 6, 16
+Test4
+Diff: 1006, 1018
+Test3
+Conversion of cost: 36
+Test1
+delete A
+Test1
+delete A
+Test1
+delete A
+Test1
+delete A
+Test1
+delete A
+Test1
+delete A
+Test1
+delete A
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test1
+delete A
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test1
+delete A
+Test3
+Conversion of cost: 48
+Test1
+delete A
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 84
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 52
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test1
+delete A
+Test3
+Conversion of cost: 48
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+insert B
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+insert B
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 84
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test1
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test1
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test1
+delete A
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 56
+Test1
+delete A
+Test3
+Conversion of cost: 48
+Test1
+delete A
+Test3
+Conversion of cost: 48
+insert B
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 60
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 52
+insert B
+Test1
+delete A
+Test1
+delete A
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 48
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+insert B
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test1
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+insert B
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test1
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+insert B
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test1
+delete A
+Test3
+Conversion of cost: 48
+Test3
+Conversion of cost: 52
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 44
+Test1
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 48
+Test1
+delete A
+Test1
+delete A
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test1
+delete A
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+insert B
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test1
+delete A
+Test1
+delete A
+Test3
+Conversion of cost: 52
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 48
+Test1
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test1
+delete A
+Test1
+delete A
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test1
+delete A
+insert B
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test1
+delete A
+Test3
+Conversion of cost: 48
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test1
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+insert B
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test1
+delete A
+Test3
+Conversion of cost: 48
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 48
+Test1
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test1
+delete A
+Test1
+delete A
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 40
+Test1
+Test1
+delete A
+insert B
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test1
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+insert B
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 44
+Test1
+delete A
+insert B
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 44
+Test1
+Test3
+Conversion of cost: 48
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 48
+Test1
+Test1
+delete A
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 76
+Test1
+delete A
+Test3
+Conversion of cost: 48
+Test1
+Test1
+delete A
+insert B
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 44
+Test1
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 56
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test1
+delete A
+Test1
+delete A
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test1
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 48
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 40
+Test1
+Test3
+Conversion of cost: 40
+Test1
+Test3
+Conversion of cost: 44
+insert B
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 40
+insert B
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 52
+Test1
+delete A
+Test3
+Conversion of cost: 44
+Test1
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 40
+Test1
+delete A
+insert B
+Test1
+Test1
+Test1
+delete A
+Test1
+delete A
+Test3
+Conversion of cost: 52
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 28
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 48
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 48
+Test1
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 48
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test1
+delete A
+Test3
+Conversion of cost: 48
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 44
+Test1
+delete A
+insert B
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 44
+insert B
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 48
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 48
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 48
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test1
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test1
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+insert B
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test1
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 48
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+insert B
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test1
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 48
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test1
+delete A
+Test1
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 48
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test1
+delete A
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test1
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 40
+Test1
+delete A
+insert B
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test1
+delete A
+Test1
+delete A
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 64
+insert B
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 48
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test1
+delete A
+insert B
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 48
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test1
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 40
+Test1
+Test3
+Conversion of cost: 48
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test1
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 48
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test1
+delete A
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test1
+delete A
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 52
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test1
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 40
+Test1
+delete A
+insert B
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 44
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 44
+Test3
+Conversion of cost: 40
+Test3
+Conversion of cost: 40
+Test1
+delete A
+Test3
+Conversion of cost: 55
+Test3
+Conversion of cost: 40
+4, 13
+6, 16
+8, 17
+10, 18
+12, 20
+14, 22
+16, 24
+18, 28
+20, 28
+22, 29
+24, 30
+26, 33
+28, 36
+30, 38
+32, 38
+34, 43
+36, 43
+38, 45
+40, 47
+42, 48
+44, 51
+46, 54
+48, 55
+50, 56
+52, 58
+54, 60
+56, 62
+58, 63
+60, 65
+62, 66
+63, 69
+65, 72
+67, 74
+69, 77
+71, 80
+73, 81
+75, 83
+77, 84
+79, 86
+81, 87
+83, 90
+85, 92
+87, 94
+89, 95
+91, 98
+93, 100
+94, 101
+96, 103
+98, 103
+100, 106
+102, 108
+104, 111
+106, 113
+108, 114
+110, 117
+112, 120
+114, 133
+116, 134
+118, 136
+120, 137
+122, 139
+125, 140
+127, 141
+129, 143
+131, 146
+133, 148
+135, 150
+137, 152
+139, 154
+141, 156
+143, 161
+145, 163
+147, 165
+149, 167
+151, 168
+153, 170
+155, 172
+157, 185
+159, 188
+161, 188
+163, 190
+165, 192
+167, 195
+169, 197
+171, 200
+173, 202
+175, 206
+177, 207
+179, 208
+181, 210
+183, 211
+185, 212
+187, 215
+188, 215
+190, 216
+192, 218
+194, 220
+196, 222
+198, 225
+200, 227
+202, 229
+204, 231
+206, 235
+208, 237
+212, 238
+214, 239
+216, 242
+218, 244
+219, 248
+221, 249
+223, 250
+225, 251
+227, 254
+229, 257
+231, 259
+233, 260
+235, 263
+237, 264
+239, 266
+241, 269
+243, 273
+245, 281
+247, 284
+249, 285
+250, 287
+252, 288
+254, 289
+256, 290
+258, 294
+260, 295
+262, 297
+264, 300
+266, 302
+268, 305
+270, 307
+272, 309
+274, 311
+276, 312
+278, 314
+280, 316
+282, 318
+284, 319
+286, 320
+288, 321
+290, 324
+292, 325
+294, 327
+296, 328
+298, 331
+300, 332
+302, 334
+304, 335
+306, 338
+308, 339
+310, 341
+312, 343
+313, 345
+315, 348
+317, 348
+319, 350
+321, 353
+323, 354
+325, 355
+329, 356
+332, 357
+333, 361
+337, 361
+340, 362
+341, 363
+344, 364
+346, 366
+348, 367
+350, 369
+352, 371
+354, 375
+356, 375
+360, 375
+362, 376
+364, 378
+366, 380
+368, 382
+370, 386
+372, 386
+374, 388
+375, 389
+377, 390
+379, 392
+381, 393
+383, 396
+385, 397
+387, 399
+389, 402
+391, 404
+393, 405
+395, 407
+397, 408
+399, 411
+401, 414
+403, 416
+405, 417
+407, 420
+409, 421
+411, 423
+413, 424
+415, 427
+417, 428
+419, 430
+421, 433
+423, 435
+425, 438
+427, 440
+429, 441
+431, 444
+433, 445
+435, 447
+437, 450
+438, 451
+440, 454
+442, 456
+444, 457
+446, 460
+448, 461
+450, 463
+452, 466
+454, 468
+456, 469
+458, 471
+460, 472
+462, 475
+464, 478
+466, 480
+468, 481
+469, 483
+471, 484
+473, 486
+475, 487
+477, 490
+479, 491
+481, 493
+483, 496
+485, 498
+487, 501
+489, 503
+491, 504
+493, 507
+495, 508
+497, 510
+499, 513
+500, 514
+502, 515
+504, 517
+506, 518
+508, 521
+510, 522
+512, 524
+514, 527
+516, 529
+518, 530
+520, 532
+522, 533
+524, 536
+526, 539
+528, 541
+530, 542
+532, 545
+534, 546
+536, 548
+538, 549
+540, 552
+542, 553
+544, 555
+546, 558
+548, 560
+550, 563
+552, 565
+554, 566
+556, 569
+558, 570
+560, 572
+562, 575
+563, 576
+565, 577
+567, 579
+569, 580
+571, 583
+573, 584
+575, 586
+577, 589
+579, 591
+581, 592
+583, 594
+585, 595
+587, 598
+589, 601
+591, 603
+593, 604
+594, 606
+596, 609
+598, 611
+600, 612
+602, 615
+604, 616
+606, 618
+608, 621
+610, 623
+612, 624
+614, 626
+616, 627
+618, 630
+620, 633
+622, 635
+624, 636
+625, 638
+627, 639
+629, 641
+631, 642
+633, 645
+635, 646
+637, 648
+639, 651
+641, 653
+643, 654
+645, 656
+647, 657
+649, 660
+651, 663
+653, 665
+655, 666
+657, 669
+659, 670
+661, 672
+663, 673
+665, 676
+667, 677
+669, 679
+671, 682
+673, 684
+675, 687
+677, 689
+679, 690
+681, 693
+683, 694
+685, 696
+687, 699
+688, 700
+690, 703
+692, 705
+694, 706
+696, 709
+698, 710
+700, 712
+702, 715
+704, 717
+706, 718
+708, 720
+710, 721
+712, 724
+714, 727
+716, 729
+718, 730
+719, 732
+721, 733
+723, 735
+725, 736
+727, 739
+729, 740
+731, 742
+733, 745
+735, 747
+737, 750
+739, 752
+741, 753
+743, 756
+745, 757
+747, 759
+749, 762
+750, 763
+752, 766
+754, 768
+756, 769
+758, 772
+760, 773
+762, 775
+764, 778
+766, 780
+768, 781
+770, 783
+772, 784
+774, 787
+776, 790
+778, 792
+780, 793
+782, 796
+784, 797
+786, 799
+788, 800
+790, 803
+792, 804
+794, 806
+796, 809
+798, 811
+800, 814
+802, 816
+804, 817
+806, 820
+808, 821
+810, 823
+812, 826
+813, 827
+815, 828
+817, 830
+819, 831
+821, 834
+823, 835
+825, 837
+827, 840
+829, 842
+831, 843
+833, 845
+835, 846
+837, 849
+839, 852
+841, 854
+843, 855
+844, 857
+846, 860
+848, 862
+850, 863
+852, 866
+854, 867
+856, 869
+858, 872
+860, 874
+862, 875
+864, 877
+866, 878
+868, 881
+870, 884
+872, 886
+874, 887
+875, 889
+877, 890
+879, 892
+881, 893
+883, 896
+885, 897
+887, 899
+889, 902
+891, 904
+893, 905
+895, 907
+897, 908
+899, 911
+901, 914
+903, 916
+905, 917
+907, 920
+909, 921
+911, 923
+913, 924
+915, 927
+917, 928
+919, 930
+921, 933
+923, 935
+925, 938
+927, 940
+929, 941
+931, 944
+933, 945
+935, 947
+937, 950
+938, 951
+940, 954
+942, 956
+944, 957
+946, 960
+948, 961
+950, 963
+952, 966
+954, 968
+956, 969
+958, 971
+960, 972
+962, 975
+964, 978
+966, 980
+968, 981
+969, 983
+971, 984
+973, 986
+975, 987
+977, 990
+979, 991
+981, 993
+983, 996
+985, 998
+987, 1001
+989, 1003
+991, 1004
+993, 1007
+995, 1008
+997, 1010
+999, 1013
+1000, 1014
+1002, 1015
+1004, 1017
+1006, 1018
+1008, 1021
+1010, 1022
+1012, 1024
+1014, 1027
+1016, 1029
+1018, 1030
+1020, 1032
+1022, 1033
+1024, 1036
+1026, 1039
+1028, 1041
+1030, 1042
+1032, 1045
+1034, 1046
+1036, 1048
+1038, 1049
+1040, 1052
+1042, 1053
+1044, 1055
+1046, 1058
+1048, 1060
+1050, 1063
+1052, 1065
+1054, 1066
+1056, 1069
+1058, 1070
+1060, 1072
+1062, 1075
+1063, 1076
+1065, 1077
+1067, 1079
+1069, 1080
+1071, 1083
+1073, 1084
+1075, 1086
+1077, 1089
+1079, 1091
+1081, 1092
+1083, 1094
+1085, 1095
+1087, 1098
+1089, 1101
+1091, 1103
+1093, 1104
+1094, 1106
+1096, 1109
+1098, 1111
+1100, 1112
+1102, 1115
+1104, 1116
+1106, 1118
+1108, 1121
+1110, 1123
+1112, 1124
+1114, 1126
+1116, 1127
+1118, 1130
+1120, 1133
+1122, 1135
+1124, 1136
+1125, 1138
+1127, 1141
+1129, 1143
+1131, 1144
+1133, 1147
+1135, 1148
+1137, 1150
+1139, 1153
+1141, 1155
+1143, 1156
+1145, 1158
+1147, 1159
+1149, 1162
+1151, 1165
+1153, 1167
+1155, 1168
+1157, 1171
+1159, 1174
+1161, 1174
+1163, 1175
+1165, 1178
+1167, 1179
+1169, 1181
+1171, 1183
+1173, 1185
+1175, 1188
+1177, 1190
+1179, 1193
+1181, 1193
+1183, 1195
+1185, 1195
+1187, 1198
+1188, 1198
+1190, 1201
+1192, 1202
+1194, 1203
+1196, 1205
+1204, 1205
+1207, 1206
+1209, 1208
+1211, 1210
+1212, 1213
+1214, 1215
+1216, 1216
+1218, 1218
+1219, 1219
+1221, 1221
+1223, 1221
+1225, 1222
+1227, 1225
+1229, 1226
+1231, 1229
+1233, 1231
+1235, 1233
+1237, 1237
+1239, 1238
+1241, 1240
+1243, 1242
+1245, 1243
+1247, 1246
+1249, 1248
+1250, 1249
+1252, 1250
+1254, 1253
+1256, 1256
+1258, 1259
+1260, 1260
+1262, 1262
+1264, 1264
+1266, 1266
+1268, 1267
+1270, 1268
+1272, 1269
+1274, 1272
+1276, 1276
+1278, 1278
+1280, 1281
+1282, 1283
+1284, 1284
+1286, 1286
+1288, 1288
+1290, 1290
+1292, 1293
+1294, 1296
+1296, 1299
+1298, 1300
+1300, 1301
+1302, 1303
+1304, 1305
+1306, 1308
+1308, 1310
+1310, 1312
+1312, 1316
+1313, 1317
+1315, 1319
+1317, 1319
+1319, 1322
+1321, 1329
+1323, 1330
+1325, 1332
+1327, 1335
+1329, 1337
+1331, 1340
+1333, 1340
+1335, 1344
+1337, 1346
+1339, 1351
+1341, 1352
+1343, 1353
+1344, 1355
+1346, 1361
+1348, 1363
+1350, 1367
+1352, 1367
+1354, 1370
+1356, 1370
+1358, 1372
+1360, 1372
+1362, 1373
+1364, 1375
+1366, 1377
+1368, 1379
+1370, 1383
+1372, 1383
+1374, 1386
+1375, 1390
+1377, 1391
+1379, 1392
+1381, 1393
+1383, 1396
+1385, 1397
+1387, 1399
+1389, 1402
+1391, 1404
+1393, 1405
+1395, 1407
+1397, 1408
+1399, 1411
+1401, 1414
+1403, 1416
+1405, 1417
+1407, 1420
+1409, 1423
+1411, 1428
+1413, 1431
+1415, 1431
+1417, 1435
+1419, 1436
+1423, 1437
+1425, 1438
+1427, 1442
+1429, 1443
+1431, 1444
+1433, 1447
+1435, 1448
+1437, 1450
+1438, 1451
+1440, 1452
+1442, 1454
+1444, 1456
+1446, 1458
+1448, 1459
+1450, 1460
+1452, 1461
+1454, 1466
+1456, 1469
+1458, 1469
+1460, 1470
+1462, 1471
+1464, 1475
+1466, 1475
+1468, 1477
+1469, 1478
+1471, 1479
+1473, 1481
+1475, 1482
+1477, 1485
+1479, 1488
+1481, 1490
+1483, 1491
+1485, 1494
+1487, 1497
+1489, 1499
+1491, 1500
+1493, 1503
+1495, 1506
+1497, 1508
+1499, 1511
+1500, 1518
+1502, 1519
+1504, 1521
+1506, 1522
+1508, 1525
+1510, 1526
+1512, 1528
+1514, 1531
+1516, 1533
+1518, 1534
+1520, 1536
+1522, 1537
+1524, 1540
+1526, 1543
+1528, 1545
+1530, 1546
+1532, 1549
+1534, 1550
+1536, 1552
+1538, 1553
+1540, 1556
+1542, 1557
+1544, 1559
+1546, 1562
+1548, 1564
+1550, 1567
+1552, 1569
+1554, 1570
+1556, 1573
+1558, 1574
+1560, 1576
+1562, 1579
+1563, 1580
+1565, 1583
+1567, 1585
+1569, 1586
+1571, 1589
+1573, 1590
+1575, 1592
+1577, 1595
+1579, 1597
+1581, 1598
+1583, 1600
+1585, 1601
+1587, 1604
+1589, 1607
+1591, 1609
+1593, 1610
+1594, 1612
+1596, 1613
+1598, 1615
+1600, 1616
+1602, 1619
+1604, 1620
+1606, 1622
+1608, 1625
+1610, 1627
+1612, 1630
+1614, 1632
+1616, 1633
+1618, 1636
+1620, 1640
+1622, 1642
+1625, 1643
+1627, 1644
+1629, 1646
+1631, 1648
+1633, 1650
+1635, 1654
+1637, 1654
+1639, 1656
+1641, 1657
+1643, 1661
+1645, 1661
+1647, 1662
+1649, 1665
+1651, 1667
+1653, 1667
+1655, 1668
+1657, 1671
+1659, 1672
+1661, 1674
+1663, 1676
+1665, 1678
+1667, 1681
+1669, 1681
+1671, 1684
+1673, 1686
+1675, 1689
+1677, 1691
+1679, 1693
+1681, 1695
+1683, 1699
+1685, 1699
+1687, 1701
+1688, 1702
+1690, 1703
+1692, 1705
+1694, 1707
+1696, 1707
+1698, 1709
+1700, 1711
+1702, 1715
+1704, 1717
+1706, 1719
+1708, 1719
+1710, 1723
+1712, 1725
+1714, 1729
+1716, 1729
+1719, 1729
+1721, 1732
+1723, 1734
+1727, 1734
+1730, 1735
+1732, 1738
+1734, 1740
+1735, 1743
+1737, 1746
+1739, 1748
+1741, 1750
+1743, 1752
+1745, 1755
+1747, 1755
+1749, 1757
+1750, 1759
+1752, 1760
+1754, 1762
+1756, 1766
+1758, 1766
+1760, 1769
+1762, 1772
+1765, 1773
+1767, 1776
+1769, 1778
+1771, 1779
+1773, 1781
+1775, 1783
+1777, 1785
+1781, 1786
+1784, 1787
+1786, 1789
+1788, 1790
+1790, 1792
+1792, 1795
+1794, 1796
+1796, 1798
+1797, 1799
+1799, 1804
+1801, 1805
+1805, 1806
+1808, 1807
+1809, 1808
+1813, 1809
+1816, 1812
+1818, 1812
+1820, 1814
+1822, 1816
+1824, 1818
+1826, 1820
+1828, 1822
+1830, 1824
+1832, 1825
+1834, 1828
+1836, 1830
+1838, 1834
+1840, 1835
+1842, 1838
+1845, 1839
+1847, 1842
+1849, 1843
+1852, 1844
+1853, 1847
+1855, 1849
+1857, 1851
+1859, 1853
+1860, 1854
+1862, 1857
+1864, 1857
+1866, 1862
+1868, 1862
+1870, 1864
+1872, 1866
+1874, 1868
+1875, 1875
+1877, 1886
+1879, 1889
+1881, 1893
+1883, 1893
+1885, 1894
+1887, 1895
+1891, 1895
+1893, 1898
+1895, 1900
+1897, 1903
+1899, 1905
+1901, 1906
+1903, 1907
+1906, 1908
+1907, 1911
+1909, 1912
+1911, 1914
+1913, 1916
+1915, 1919
+1917, 1920
+1919, 1922
+1921, 1925
+1923, 1927
+1925, 1931
+1927, 1933
+1931, 1934
+1933, 1937
+1935, 1937
+1937, 1941
+1938, 1942
+1940, 1945
+1942, 1948
+1946, 1949
+1948, 1950
+1950, 1951
+1952, 1954
+1954, 1955
+1958, 1956
+1960, 1960
+1962, 1962
+1964, 1963
+1966, 1966
+1968, 1968
+1969, 1969
+1971, 1971
+1973, 1972
+1975, 1973
+1977, 1976
+1979, 1982
+1981, 1984
+1983, 1986
+1985, 1986
+1987, 1989
+1989, 1989
+1991, 1991
+1993, 1993
+1995, 1996
+1997, 1997
+1999, 1999
+Cost: 1010
+CATGGCTG-GGGGC-G-GAACCCATAAAAAAGGTAGATGATGAATGAA-GGTCAGTGGACGATTAATAAAAGAATGGGC-GTTTTGGCAGGCG-TACGAGAAGAAAAAATGAGCTTTATGAGGCATTATTTTTGTTTGTATGGGCAACATGAATGCGA-GAAGTTA-TAATTAAT--ATCAA-TATTTTGGAACCCAATTTTCGCTTATGGGCCCAATCAAATCAGAAAAGAAAGGATTATTTCAAGAAAAGGGCTATGTACTTTCTCTTATTTTAACTTTCGCAATGTCTTAAGATCAATCGGGTGATGCTTGAAATATCCTTCCCTTACTAATGTATACTAGATTGTAGGCCAAAAATATCATTGGTATAATGTTAAATAGATCTGTAATTTTGATTTACTACTAGTTGATGCTAGCAATCGGAATTAAAAATACATCAGGTACAATATGCTGATTTCGATGAACGGTAAGTCTTTAATCTACAATTATCGTTTCAAAACTTCCGATCGTCCTTGAATTGCATAAAAATTTTCTAAACTCATGGTTCCTAAAAAGAAATAGCCGGAGATCATTAACTCTTTATG-TTAAGTTAA-T-T-TATT-AGTAAGTTC-AAATTTATGACAAGCACGTAAATTTAATTTGAATTATTCAAAATAAG-AAACTGG-GGTACTTCA-T-C-TGCAT-GACTAGATACTGCATCTTCTT-ATATAACAAAGCAGAATTCA-ATC-TTTCAAACATATTGGTACATACACCTAATGACTAACATTACTAATAACTCGCTTATAGCTAATTATACATTGTGTTATTACTTAAG-CTA-CCC-CGCTGAC-TACTAAT-ATAAG-GAACC-GAC--CT-AAATAACAG-GAAGG-GTAAGGAAAGTAAAATTTACAAGAC-TTTCCAACTAAAAAGACGAATG-C-GCTGATT-AG-TCGGGGACCGCGGTCTGAGC-GTCCCTAGTATAGCGGCTGGGAT-C-GCGTA
+CCCGATCGGAAGGGGGGCAGGCCATGAAAAGGGTTGAAAACGTTTGAGGNNNNNNNNNACAATAAATAGGAGAATGAGCCGAAATGACAGAAGGGAGGAAATGGAGTAAGTGACTAGAAGGGGATGGACCGAGAATAATATAGGTAAGAGGAATGGAAAGAAGGTAATTTTTAGGGGATGANNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNGGTTAACTTCAAAAAATGTTTAGGATGTTCCAACTTTCTAACATTGGAGGAAAAGGACGTAGAAGCAGTCAAAATATCCTAATTGTTGGCAGGTTTTTTTTTGCANNNNNNNNNNNNNNNNNNNNNNTTATATAATCAGGCAGAATTTAAATNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNTACTGAAGGATTTGAAAATTTTACCTTTTAATTTGAATTTCTTAAGTAAACTTTATTTGCATTAAATGGAAAAGGGTTTCAATGCCCATCTGCCCTTCCCTTTTAAGGCCACGGGGGGCCTCAAATGGATTTGTAACAAATATGACTGAGCCATCTATAATTTAGTGAATTGGAGGGGGCAAA
+param start: 0
+param end: 0

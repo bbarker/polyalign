@@ -1,0 +1,756 @@
+dnl Configure template for the EMBOSS package.
+dnl Process this file with autoconf to produce a configure script.
+
+#if you want to force configure to use the default C compiler cc
+## then uncomment the following line.
+#CC=cc
+
+
+
+
+dnl #########################################################################
+AC_DEFUN([AX_COMPARE_VERSION], [
+  # Used to indicate true or false condition
+  ax_compare_version=false
+
+  # Convert the two version strings to be compared into a format that
+  # allows a simple string comparison.  The end result is that a version
+  # string of the form 1.12.5-r617 will be converted to the form
+  # 0001001200050617.  In other words, each number is zero padded to four
+  # digits, and non digits are removed.
+  AS_VAR_PUSHDEF([A],[ax_compare_version_A])
+  A=`echo "$1" | sed -e 's/\([[0-9]]*\)/Z\1Z/g' \
+                     -e 's/Z\([[0-9]]\)Z/Z0\1Z/g' \
+                     -e 's/Z\([[0-9]][[0-9]]\)Z/Z0\1Z/g' \
+                     -e 's/Z\([[0-9]][[0-9]][[0-9]]\)Z/Z0\1Z/g' \
+                     -e 's/[[^0-9]]//g'`
+
+  AS_VAR_PUSHDEF([B],[ax_compare_version_B])
+  B=`echo "$3" | sed -e 's/\([[0-9]]*\)/Z\1Z/g' \
+                     -e 's/Z\([[0-9]]\)Z/Z0\1Z/g' \
+                     -e 's/Z\([[0-9]][[0-9]]\)Z/Z0\1Z/g' \
+                     -e 's/Z\([[0-9]][[0-9]][[0-9]]\)Z/Z0\1Z/g' \
+                     -e 's/[[^0-9]]//g'`
+
+  dnl # In the case of le, ge, lt, and gt, the strings are sorted as necessary
+  dnl # then the first line is used to determine if the condition is true.
+  dnl # The sed right after the echo is to remove any indented white space.
+  m4_case(m4_tolower($2),
+  [lt],[
+    ax_compare_version=`echo "x$A
+x$B" | sed 's/^ *//' | sort -r | sed "s/x${A}/false/;s/x${B}/true/;1q"`
+  ],
+  [gt],[
+    ax_compare_version=`echo "x$A
+x$B" | sed 's/^ *//' | sort | sed "s/x${A}/false/;s/x${B}/true/;1q"`
+  ],
+  [le],[
+    ax_compare_version=`echo "x$A
+x$B" | sed 's/^ *//' | sort | sed "s/x${A}/true/;s/x${B}/false/;1q"`
+  ],
+  [ge],[
+    ax_compare_version=`echo "x$A
+x$B" | sed 's/^ *//' | sort -r | sed "s/x${A}/true/;s/x${B}/false/;1q"`
+  ],[
+    dnl Split the operator from the subversion count if present.
+    m4_bmatch(m4_substr($2,2),
+    [0],[
+      # A count of zero means use the length of the shorter version.
+      # Determine the number of characters in A and B.
+      ax_compare_version_len_A=`echo "$A" | awk '{print(length)}'`
+      ax_compare_version_len_B=`echo "$B" | awk '{print(length)}'`
+
+      # Set A to no more than B's length and B to no more than A's length.
+      A=`echo "$A" | sed "s/\(.\{$ax_compare_version_len_B\}\).*/\1/"`
+      B=`echo "$B" | sed "s/\(.\{$ax_compare_version_len_A\}\).*/\1/"`
+    ],
+    [[0-9]+],[
+      # A count greater than zero means use only that many subversions
+      A=`echo "$A" | sed "s/\(\([[0-9]]\{4\}\)\{m4_substr($2,2)\}\).*/\1/"`
+      B=`echo "$B" | sed "s/\(\([[0-9]]\{4\}\)\{m4_substr($2,2)\}\).*/\1/"`
+    ],
+    [.+],[
+      AC_WARNING(
+        [illegal OP numeric parameter: $2])
+    ],[])
+
+    # Pad zeros at end of numbers to make same length.
+    ax_compare_version_tmp_A="$A`echo $B | sed 's/./0/g'`"
+    B="$B`echo $A | sed 's/./0/g'`"
+    A="$ax_compare_version_tmp_A"
+
+    # Check for equality or inequality as necessary.
+    m4_case(m4_tolower(m4_substr($2,0,2)),
+    [eq],[
+      test "x$A" = "x$B" && ax_compare_version=true
+    ],
+    [ne],[
+      test "x$A" != "x$B" && ax_compare_version=true
+    ],[
+      AC_WARNING([illegal OP parameter: $2])
+    ])
+  ])
+
+  AS_VAR_POPDEF([A])dnl
+  AS_VAR_POPDEF([B])dnl
+
+  dnl # Execute ACTION-IF-TRUE / ACTION-IF-FALSE.
+  if test "$ax_compare_version" = "true" ; then
+    m4_ifvaln([$4],[$4],[:])dnl
+    m4_ifvaln([$5],[else $5])dnl
+  fi
+]) dnl AX_COMPARE_VERSION
+
+
+
+
+AC_INIT(source/para2.cc)
+AM_INIT_AUTOMAKE(PARA2, 0.0.1)
+
+AC_PROG_AWK
+dnl Make sure CFLAGS is defined to stop AC_PROC_CC adding -g
+CFLAGS="$CFLAGS "
+AC_PROG_CC
+AC_PROG_CPP
+
+
+AC_MSG_CHECKING([if gcc supports OpenMP])
+GCC_VERSION=`$CC -dumpversion`
+AX_COMPARE_VERSION($GCC_VERSION, [ge], [4.2.0], [
+  AC_MSG_RESULT(yes)
+  CFLAGS="$CFLAGS -fopenmp" 
+  ], AC_MSG_RESULT(no))
+
+#AC_MSG_RESULT($GCC1)
+
+dnl Extra arguments to configure
+unset gmp_lib_path GMP_CFLAGS GMP_CC
+AC_ARG_WITH(gmp_include,
+   [  --with-gmp-include=DIR  GMP include directory ],
+   CPPFLAGS="$CPPFLAGS -I$withval")
+AC_ARG_WITH(gmp_lib,
+   [  --with-gmp-lib=DIR      GMP lib directory ], [
+   LDFLAGS="$LDFLAGS -L$withval"
+   gmp_lib_path="$withval"
+  ])
+AC_ARG_WITH(gmp_build,
+   [  --with-gmp-build=DIR    GMP build directory], [
+    CPPFLAGS="$CPPFLAGS -I$withval -I$withval/tune"
+    LDFLAGS="$LDFLAGS -L$withval -L$withval/.libs -L$withval/tune/"
+    gmp_lib_path="$withval$PATH_SEPARATOR$withval/.libs$PATH_SEPARATOR$withval/tune"
+    if test -r $withval/Makefile ; then
+     GMP_CFLAGS=`grep -w "CFLAGS =" $withval/Makefile | sed 's/CFLAGS = //'`
+     GMP_CC=`grep -w "CC =" $withval/Makefile | sed 's/CC = //'`
+    fi
+   ])
+AC_ARG_WITH(gmp,
+   [  --with-gmp=DIR          GMP install directory ], [
+   CPPFLAGS="$CPPFLAGS -I$withval/include"
+   LDFLAGS="$LDFLAGS -L$withval/lib"
+   gmp_lib_path="$withval/lib"
+  ])
+
+
+
+dnl Test whether --with-sgiabi given for IRIX (n32m3 n32m4 64m3 64m4)
+if test "`uname`" = "IRIX" || test "`uname`" = "IRIX64" ; then
+if test "$CC" != "gcc"; then
+  CC=cc
+  CFLAGS="$CFLAGS -woff 1048"
+  CHECK_SGI
+fi
+fi
+
+
+dnl Test if --enable-64 is given
+if test "${enable_64+set}" != set; then
+enable_64=no
+fi
+
+
+AC_ARG_ENABLE(64,
+[ --enable-64   64 ])
+if test "${enable_64}" = "yes" ; then
+AC_MSG_CHECKING(for 64bit compilation support)
+
+dnl Test for Linux 64 bit
+if test "`uname`" = "Linux"; then
+CPPFLAGS="-DAJ_Linux64 $CPPFLAGS"
+fi
+
+dnl Test for FreeBSD 64 bit
+if test "`uname`" = "FreeBSD"; then
+CPPFLAGS="-DAJ_FreeBSD64 $CPPFLAGS"
+fi
+
+dnl Test for Solaris 64 bit. This is done in the optimisation section...
+dnl Another Solaris feature is that -fast implies -xarch=v8 and
+dnl therefore switches off -xarch=v9 if it is given first.
+
+
+dnl Test for OSF1 64 bit (its always this anyway)
+if test "`uname`" = "OSF1"; then
+CPPFLAGS="-DAJ_OSF164 $CPPFLAGS"
+fi
+
+dnl Test for SGI 64 bit
+if test "`uname`" = "IRIX" || test "`uname`" = "IRIX64"; then
+CPPFLAGS="-DAJ_IRIX64 $CPPFLAGS"
+fi
+
+dnl Test for AIX 64 bit
+if test "`uname`" = "AIX"; then
+CPPFLAGS="-DAJ_AIX64 $CPPFLAGS"
+if test "$CC" != "gcc"; then
+CC="$CC -q64"
+fi
+NM="nm -B -X 64"
+AR="ar -X 64"
+fi
+
+dnl Test for HP-UX 64 bit
+if test "`uname`" = "HP-UX"; then
+if test "$CC" != "gcc"; then
+CC="$CC +DD64"
+fi
+CPPFLAGS="-DAJ_HPUX64 $CPPFLAGS"
+fi
+
+AC_MSG_RESULT(done)
+fi
+
+
+
+
+
+
+
+dnl Set optimisation flags
+if test "$CC" != "gcc"; then
+
+dnl Test for AIX optimisation
+if test "`uname`" = "AIX"; then
+CFLAGS="$CFLAGS -O3 -qstrict -qarch=auto -qtune=auto"
+fi
+
+dnl test for SGI optimisation
+if test "`uname`" = "IRIX" || test "`uname`" = "IRIX64" ; then
+LD="/usr/bin/ld -IPA"
+CFLAGS="$CFLAGS -Ofast"
+fi
+
+dnl Test for HP-UX optimisation
+if test "`uname`" = "HP-UX"; then
+CFLAGS="$CFLAGS -fast"
+fi
+
+dnl Test for OSF1 optimisation
+if test "`uname`" = "OSF1"; then
+CFLAGS="$CFLAGS -fast -U_FASTMATH"
+fi
+
+dnl test for Solaris optimisation
+if test "`uname`" = "SunOS"; then
+CFLAGS="$CFLAGS -O"
+dnl test for 64 bit ptr here (see Solaris 64bit above)
+if test "${enable_64}" = "yes" ; then
+CFLAGS="$CFLAGS -xtarget=ultra -xarch=v9"
+fi
+fi
+
+dnl Test for Linux optimisation
+if test "`uname`" = "Linux"; then
+CFLAGS="$CFLAGS -O2"
+fi
+
+dnl Test for FreeBSD optimisation
+if test "`uname`" = "FreeBSD"; then
+CFLAGS="$CFLAGS -O2"
+fi
+
+else
+CFLAGS="$CFLAGS -O2"
+fi
+dnl End of Optimisation tests
+
+
+
+dnl
+dnl Setup GMP detection
+dnl
+
+dnl Check GMP Header
+AC_MSG_CHECKING(for gmp.h)
+AC_COMPILE_IFELSE([AC_LANG_SOURCE([[
+#include "gmp.h"
+]])],[AC_MSG_RESULT(yes)],[
+ AC_MSG_RESULT(no)
+ AC_MSG_ERROR([gmp.h can't be found, or is unusable.])
+])
+
+dnl Configs for Windows DLLs.
+dnl libtool requires "-no-undefined" for win32 dll
+dnl It also disables the tests involving the linking with LIBGMP if DLL
+AC_DISABLE_SHARED
+AC_LIBTOOL_WIN32_DLL
+case $host in
+  *-*-cygwin* | *-*-mingw* | *-*-pw32* | *-*-os2*)
+   AC_MSG_CHECKING(for DLL/static GMP)
+   if test "$enable_shared" = yes; then
+     LDFLAGS="$LDFLAGS -no-undefined"
+     dont_link_with_gmp="yes"
+     AC_COMPILE_IFELSE([AC_LANG_PROGRAM([[
+#include "gmp.h"
+#if !__GMP_LIBGMP_DLL
+# error "Dead man"
+error
+#endif
+     ]], [[]])],[AC_MSG_RESULT(DLL)],[
+  AC_MSG_RESULT(static)
+  AC_MSG_ERROR([gmp.h isn't a DLL: use --enable-static --disable-shared]) ])
+   else
+     AC_COMPILE_IFELSE([AC_LANG_PROGRAM([[
+#include "gmp.h"
+#if __GMP_LIBGMP_DLL
+# error "Dead man"
+error
+#endif
+     ]], [[]])],[AC_MSG_RESULT(static)],[
+  AC_MSG_RESULT(DLL)
+  AC_MSG_ERROR([gmp.h is a DLL: use --disable-static --enable-shared]) ])
+  fi
+  ;;
+esac
+dnl Finally set up LibTool
+AC_PROG_LIBTOOL
+
+
+dnl
+dnl For mpfr-longlong.h - TODO: should be replaced (see acinclude.m4).
+dnl
+
+GMP_C_ATTRIBUTE_MODE
+
+
+dnl
+dnl Setup GMP detection (continued)
+dnl
+
+AC_MSG_CHECKING(for recent GMP)
+AC_COMPILE_IFELSE([AC_LANG_SOURCE([[
+#include "gmp.h"
+#if (__GNU_MP_VERSION*100+__GNU_MP_VERSION_MINOR*10 < 410)
+# error "min GMP version is 4.1.0"
+error
+#endif
+]])],[AC_MSG_RESULT(yes)],[
+ AC_MSG_RESULT(no)
+ AC_MSG_ERROR([GMP 4.1.0 min required])
+])
+
+dnl Check if we can use internal header files of GMP.
+AC_MSG_CHECKING(for gmp internal files)
+AC_COMPILE_IFELSE([AC_LANG_SOURCE([[
+#include "gmp.h"
+#include "gmp-impl.h"
+#include "longlong.h"
+]])],[
+  AC_MSG_RESULT(yes)
+  AC_DEFINE([MPFR_HAVE_GMP_IMPL],1,[Use GMP Internal Files])
+  gmp_internal_file_check=yes
+],[
+  AC_MSG_RESULT(no)
+  AC_FUNC_ALLOCA
+])
+dnl Check for valid BITS_PER_MP_LIMB and BYTES_PER_MP_LIMB
+dnl This test doesn't need to link with libgmp (at least it shouldn't).
+if test -n "$gmp_internal_file_check" ; then
+  AC_MSG_CHECKING(for valid BITS_PER_MP_LIMB and BYTES_PER_MP_LIMB)
+  AC_RUN_IFELSE([AC_LANG_PROGRAM([[
+#include <limits.h>
+#include "gmp.h"
+#include "gmp-impl.h"
+]], [[
+  return BITS_PER_MP_LIMB == BYTES_PER_MP_LIMB * CHAR_BIT
+         && sizeof(mp_limb_t) == BYTES_PER_MP_LIMB ? 0 : 1;
+]])], [AC_MSG_RESULT(yes)], [
+       AC_MSG_RESULT(no)
+       AC_MSG_ERROR([BITS_PER_MP_LIMB or BYTES_PER_MP_LIMB are incorrect.
+You probably need to change some of the GMP or MPFR compile options.])],
+       [AC_MSG_RESULT([can't test])])
+fi
+
+
+dnl We really need to link using libtool. But it is impossible with the current
+dnl libtool.
+dnl The practical problems appear only under MS Windows since the library name
+dnl is libgmp-3 (due to libtool versionning). The best solution
+dnl is to believe it works under MS-Windows.
+if test "$dont_link_with_gmp" = yes ; then
+LIBS="-lgmp $LIBS"
+else
+
+dnl Check if we can link with GMP
+dnl AC_CHECK_LIB(gmpxx, __gmpq_init, [LIBS="-lgmp -lgmpxx $LIBS"],
+dnl [AC_MSG_ERROR(libgmp not found)])
+dnl AC_CHECK_LIB(gmp, __gmpq_init, [LIBS="-lgmp $LIBS"],
+dnl [AC_MSG_ERROR(libgmp not found)])
+
+dnl Check for corresponding 'gmp.h' and libgmp.a
+AC_MSG_CHECKING(if gmp.h version and libgmp version are the same)
+dnl We do not set LD_LIBRARY_PATH, as it is not possible to set it just
+dnl before the test program is run, and we do not want to affect other
+dnl programs (such as the compiler), because the behavior could be
+dnl incorrect and even have security implications.
+saved_LD_RUN_PATH="$LD_RUN_PATH"
+LD_RUN_PATH="${LD_RUN_PATH:+$LD_RUN_PATH$PATH_SEPARATOR}$gmp_lib_path"
+export LD_RUN_PATH
+AC_RUN_IFELSE([AC_LANG_PROGRAM([[
+#include <stdio.h>
+#include <string.h>
+#include "gmp.h"
+]], [[
+  char buffer[100];
+  if (__GNU_MP_VERSION_PATCHLEVEL != 0)
+    sprintf (buffer, "%d.%d.%d", __GNU_MP_VERSION, __GNU_MP_VERSION_MINOR,
+            __GNU_MP_VERSION_PATCHLEVEL);
+  else
+    sprintf (buffer, "%d.%d", __GNU_MP_VERSION, __GNU_MP_VERSION_MINOR);
+  printf ("(%s/%s) ", buffer, gmp_version);
+  return (strcmp (buffer, gmp_version) != 0) ? 1 : 0;
+]])], [AC_MSG_RESULT(yes)],
+   [AC_MSG_RESULT(no)
+    AC_MSG_WARN(['gmp.h' and 'libgmp' seems to have different versions or])
+    AC_MSG_WARN([we cannot run a program linked with GMP (if you cannot])
+    AC_MSG_WARN([see the version numbers above).])
+    AC_MSG_WARN([However since we can't use 'libtool' inside the configure,])
+    AC_MSG_WARN([we can't be sure. See 'config.log' for details.])
+    ],AC_MSG_RESULT([can not test])
+)
+LD_RUN_PATH="$saved_LD_RUN_PATH"
+
+dnl End of tests which need to link with GMP.
+fi
+
+
+
+
+dnl Use libtool to make a shared library.
+AC_PROG_LIBTOOL
+
+dnl endian test for indexing system
+AC_C_BIGENDIAN(CPPFLAGS="$CPPFLAGS -DBENDIAN",CPPFLAGS="$CPPFLAGS -DLENDIAN")
+
+dnl PCRE library definitions - see the MAJOR and MINOR values
+dnl to see which version's configure.in these lines come from
+
+dnl Provide the current PCRE version information. Do not use numbers
+dnl with leading zeros for the minor version, as they end up in a C
+dnl macro, and may be treated as octal constants. Stick to single
+dnl digits for minor numbers less than 10. There are unlikely to be
+dnl that many releases anyway.
+
+PCRE_MAJOR=4
+PCRE_MINOR=3
+PCRE_DATE=21-May-2003
+PCRE_VERSION=${PCRE_MAJOR}.${PCRE_MINOR}
+
+dnl Default values for miscellaneous macros
+
+POSIX_MALLOC_THRESHOLD=-DPOSIX_MALLOC_THRESHOLD=10
+
+dnl Provide versioning information for libtool shared libraries that
+dnl are built by default on Unix systems.
+
+PCRE_LIB_VERSION=0:1:0
+PCRE_POSIXLIB_VERSION=0:0:0
+
+
+dnl Define where the EMBOSS package is located
+AC_SUBST(AJAX_FIXED_ROOT)
+AJAX_FIXED_ROOT="\\\"`pwd`/emboss\\\""
+AC_SUBST(EMBOSS_TOP)
+EMBOSS_TOP=`pwd`
+
+dnl Program checks
+AC_PROG_CXX
+AC_PROG_INSTALL
+AC_PROG_LN_S
+AC_PROG_MAKE_SET
+AC_PROG_RANLIB
+
+dnl Check for header files
+AC_PATH_XTRA
+AC_HEADER_DIRENT
+AC_HEADER_STDC
+
+AC_CHECK_HEADERS(unistd.h)
+
+dnl Check for typedefs, structures and compiler characteristics
+AC_C_CONST
+AC_TYPE_PID_T
+AC_TYPE_SIZE_T
+AC_STRUCT_TM
+
+dnl Check for library functions
+AC_FUNC_GETPGRP
+AC_FUNC_STRFTIME
+AC_FUNC_VFORK
+AC_FUNC_VPRINTF
+
+AC_CHECK_FUNCS(strdup strstr strchr erand48 memmove)
+
+if test "${with_x}" != "no" ; then
+LF_EMBOSS_PATH_XLIB
+fi
+
+dnl Library checks
+AC_CHECK_LIB(c, gethostbyname, LIBS="$LIBS", LIBS="$LIBS -lnsl")
+AC_CHECK_LIB(c, socket, LIBS="$LIBS" , LIBS="$LIBS -lsocket")
+AC_CHECK_LIB(m, main)
+
+dnl GD for FreeBSD requires libiconv
+if test "`uname`" = "FreeBSD"; then
+AC_CHECK_LIB(iconv, main, LIBS="$LIBS", LIBS="-liconv $LIBS")
+fi
+
+AM_CONDITIONAL(AMPNG, false)
+
+
+
+CHECK_GENERAL
+CHECK_JAVA
+CHECK_JAVAOS
+CHECK_PNGDRIVER
+CHECK_AUTH
+CHECK_GROUT
+CHECK_AMD64
+
+dnl "Export" these variables for PCRE
+
+AC_SUBST(HAVE_MEMMOVE)
+AC_SUBST(HAVE_STRERROR)
+AC_SUBST(PCRE_MAJOR)
+AC_SUBST(PCRE_MINOR)
+AC_SUBST(PCRE_DATE)
+AC_SUBST(PCRE_VERSION)
+AC_SUBST(PCRE_LIB_VERSION)
+AC_SUBST(PCRE_POSIXLIB_VERSION)
+AC_SUBST(POSIX_MALLOC_THRESHOLD)
+
+dnl Test if --enable-localforce given
+locallink=no
+embprefix=/usr/local
+AC_ARG_ENABLE(localforce,
+[  --enable-localforce     force compile/link against /usr/local])
+if test "${enable_localforce}" = "yes" ; then
+embprefix=/usr/local
+fi          
+
+if test "${prefix}" = "NONE" ; then
+   if test "${enable_localforce}" != "yes" ; then
+      locallink=yes
+   else
+      locallink=no
+      embprefix=/usr/local
+   fi
+else
+   embprefix=${prefix}
+fi
+AM_CONDITIONAL(LOCALLINK, test "${locallink}" = "yes")
+AC_SUBST(embprefix)
+
+#dnl Test if --enable-corba is given
+#AC_ARG_ENABLE(corba,
+#[ --enable-corba	   corba (need glib and orbit)])
+#if test "${enable_corba}" = "yes" ; then
+#AC_MSG_CHECKING(for ORBit and glib)
+#CPPFLAGS="$CPPFLAGS -I/usr/lib/glib/include -I/usr/local/lib/glib/include"
+#
+#AC_CHECK_HEADERS(glib.h)
+#AC_CHECK_HEADERS(orb/orbit.h)
+#AC_CHECK_LIB(glib, main)
+#
+#AC_CHECK_LIB(ORBitutil, main)
+#AC_CHECK_LIB(IIOP, main)
+#AC_CHECK_LIB(ORBit, main)
+#fi
+
+dnl Test if --enable-debug given
+AC_ARG_ENABLE(debug,
+[  --enable-debug          debug (-g option on compiler)])
+if test "${enable_debug}" = "yes" ; then
+CFLAGS="$CFLAGS -g"
+fi       
+
+AC_ARG_ENABLE(profile,
+[  --enable-profile          profile (-pg option on compiler)])
+if test "${enable_profile}" = "yes" ; then
+CFLAGS="$CFLAGS -pg"
+fi
+   
+
+
+dnl Turn off irritating linker warnings in IRIX
+if test "`uname`" = "IRIX" || test "`uname`" = "IRIX64"; then
+CFLAGS="-Wl,-LD_MSG:off=85:off=84:off=16:off=134 $CFLAGS"
+fi
+
+
+
+
+dnl Test if --enable-large is given
+if test "${enable_large+set}" != set; then
+enable_large=yes
+fi
+
+
+AC_ARG_ENABLE(large,
+[ --enable-large   large ])
+if test "${enable_large}" = "yes" ; then
+AC_MSG_CHECKING(for large file support)
+
+dnl Test for Linux large file support
+if test "`uname`" = "Linux"; then
+CPPFLAGS="-DAJ_LinuxLF -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE $CPPFLAGS"
+fi
+
+dnl Test for FreeBSD large file support
+if test "`uname`" = "FreeBSD"; then
+CPPFLAGS="-DAJ_FreeBSDLF $CPPFLAGS"
+fi
+
+dnl Test for Solaris large file support
+if test "`uname`" = "SunOS"; then
+CPPFLAGS="-DAJ_SolarisLF -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE $CPPFLAGS"
+fi
+
+dnl Test for OSF1 large file support (its always this anyway)
+if test "`uname`" = "OSF1"; then
+CPPFLAGS="-DAJ_OSF1LF $CPPFLAGS"
+fi
+
+dnl Test for SGI large file support
+dnl CPPFLAGS="-DAJ_IRIXLF -D_LARGEFILE64_SOURCE $CPPFLAGS"
+if test "`uname`" = "IRIX" || test "`uname`" = "IRIX64"; then
+CPPFLAGS="-DAJ_IRIXLF -D_LARGEFILE64_SOURCE $CPPFLAGS"
+fi
+
+dnl Test for AIX large file support
+dnl CPPFLAGS="-DAJ_AIXLF $CPPFLAGS"
+if test "`uname`" = "AIX"; then
+CPPFLAGS="-DAJ_AIXLF -D_LARGE_FILES $CPPFLAGS"
+fi
+
+dnl Test for HP-UX large file support
+dnl CPPFLAGS="-DAJ_HPUXLF -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 $CPPFLAGS"
+if test "`uname`" = "HP-UX"; then
+CPPFLAGS="-DAJ_HPUXLF -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 $CPPFLAGS"
+fi
+
+dnl Test for MacOSX large file support off_t and fpos_t are always 64-bit
+dnl CPPFLAGS="-DAJ_MACOSXLF
+if test "`uname`" = "Darwin"; then
+CPPFLAGS="-DAJ_MACOSXLF"
+fi
+
+AC_MSG_RESULT(done)
+fi
+
+
+
+
+
+
+
+
+
+
+
+
+
+dnl Test if purify exists and if --enable-purify given if so
+dnl set "-g"
+
+AC_MSG_CHECKING(for purify)
+#if(purify -version) < /dev/null > /dev/null 2>&1; then
+   AC_ARG_ENABLE(purify,
+   [  --enable-purify         purify ])
+if test "${enable_purify}" = "yes" ; then
+     CC="purify --chain-length="20" -best-effort -windows=yes gcc -g"
+     LIBTOOL="$LIBTOOL --tag=CC"
+     AC_MSG_RESULT(yes)
+else
+   AC_MSG_RESULT(no)
+fi          
+#fi
+
+
+dnl Test if --enable-warnings given
+AC_ARG_ENABLE(warnings,
+[  --enable-warnings       warnings (-Wall option on gcc compiler)])
+if test "${enable_warnings}" = "yes" ; then
+  CFLAGS="$CFLAGS -Wall -fno-strict-aliasing"
+fi          
+
+dnl Set extra needed compiler flags
+if test "$CC" = "cc"; then
+  case "$host" in
+    alpha*-dec-osf*) CFLAGS="$CFLAGS -ieee";;
+  esac
+fi
+AM_CONDITIONAL(PURIFY, test "${enable_purify}" = "yes")
+
+dnl Test if --enable-devwarnings given
+AC_ARG_ENABLE(devwarnings,
+[  --enable-devwarnings    developer warnings (for prototypes on gcc compiler)])
+if test "${enable_devwarnings}" = "yes" ; then
+if test "$CC" = "gcc"; then
+  CFLAGS="$CFLAGS -Wstrict-prototypes -Wmissing-prototypes"
+fi
+fi          
+
+dnl test for cygwin to set AM_LDFLAGS in library & apps Makefile.ams
+AJOSNAME=`uname`
+iscyg=no
+if test `expr substr $AJOSNAME 1 6` = "CYGWIN"; then
+   iscyg=yes
+fi
+AM_CONDITIONAL(ISCYGWIN, test "$iscyg" = "yes")
+AC_SUBST(ISCYGWIN)
+
+
+dnl Tests for AIX
+dnl If shared needs -Wl,-G in plplot,ajax,nucleus, -lX11 in plplot,
+dnl and -Wl,brtl -Wl,-bdynamic in emboss
+dnl We therefore need a static test as well
+needajax=no
+AM_CONDITIONAL(ISAIXIA64, test "`uname`" = "AIX")
+AM_CONDITIONAL(ISSHARED, test "${enable_shared}" = "yes")
+AC_SUBST(ISAIXIA64)
+
+if test "`uname`" = "AIX"; then
+case $host_os in
+	aix5*) needajax=no ;;
+	aix4.3.3*) needajax=yes ;;
+	*) needajax=no ;;
+esac
+fi
+AM_CONDITIONAL(NEEDAJAX,test "$needajax" = "yes")
+AC_SUBST(NEEDAJAX)
+
+
+dnl HP-UX needs -lsec for shadow passwords
+if test "`uname`" = "HP-UX"; then
+LDFLAGS="$LDFLAGS -lsec"
+fi
+
+
+dnl check and set compilation flags for Jemboss auth server code
+CHECK_THREADS
+
+dnl this can't be the best way to do this
+CXXFLAGS=${CFLAGS}
+
+AC_OUTPUT(Makefile source/Makefile emboss_acd/Makefile
+emboss_doc/Makefile emboss_doc/html/Makefile emboss_doc/text/Makefile)

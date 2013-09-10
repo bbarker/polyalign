@@ -1,0 +1,10 @@
+Make sure your compiler supports OpenMP.  GCC 4.2.0+ is an OpenMP compiler that is freely available.
+
+Set the following environmental variables prior to running the application:
+
+OMP_NUM_THREADS=<Number of threads to use.>  Typically this is the number of processing cores on your system.  Note that this only works on shared memory systems and cannot benefit from clusters and the like.
+
+OMP_NESTED=TRUE
+
+
+

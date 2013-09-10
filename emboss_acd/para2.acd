@@ -1,0 +1,34 @@
+application: para2 [
+  documentation: "Parametric Needleman-Wunsch global alignment."
+  groups: "Alignment:Global"
+  gui: "yes"
+  batch: "yes"
+  cpu: "medium"
+]
+
+  sequence: asequence [
+    parameter: "Y"
+    type: "any"
+  ]
+
+  seqall: bsequence [
+    parameter: "Y"
+    type: "@($(acdprotein) ? stopprotein : nucleotide)"
+  ]
+
+
+section: output [
+  information: "Output section"
+  type: "page"
+]
+  
+  align: outfile [
+    parameter: "Y"
+    aformat: "markx0"
+    minseqs: "2"
+    maxseqs: "2"
+    aglobal: "Y"
+  ]
+
+endsection: output
+

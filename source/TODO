@@ -1,0 +1,5 @@
+Add internal score checker once algorithm seems to be working.
+Change unsigned longs to smaller types.
+Check scoring of in-del:  ____-----
+
+For database searches, stagger two at a time to take advantage of initial iteration.

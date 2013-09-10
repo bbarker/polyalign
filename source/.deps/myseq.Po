@@ -1,0 +1,345 @@
+myseq.o myseq.o: myseq.c ../../../nucleus/emboss.h ../../../ajax/ajax.h \
+  /usr/include/stdio.h /usr/include/features.h /usr/include/sys/cdefs.h \
+  /usr/include/gnu/stubs.h \
+  /usr/local/gcc4.2/lib/gcc/x86_64-unknown-linux-gnu/4.2.0/include/stddef.h \
+  /usr/include/bits/types.h /usr/include/bits/wordsize.h \
+  /usr/include/bits/typesizes.h /usr/include/libio.h \
+  /usr/include/_G_config.h /usr/include/wchar.h /usr/include/bits/wchar.h \
+  /usr/include/gconv.h \
+  /usr/local/gcc4.2/lib/gcc/x86_64-unknown-linux-gnu/4.2.0/include/stdarg.h \
+  /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
+  /usr/include/bits/stdio.h ../../../ajax/ajarch.h \
+  /usr/include/sys/types.h /usr/include/time.h /usr/include/endian.h \
+  /usr/include/bits/endian.h /usr/include/sys/select.h \
+  /usr/include/bits/select.h /usr/include/bits/sigset.h \
+  /usr/include/bits/time.h /usr/include/sys/sysmacros.h \
+  /usr/include/bits/pthreadtypes.h /usr/include/bits/sched.h \
+  /usr/include/stdlib.h /usr/include/alloca.h /usr/include/string.h \
+  /usr/include/bits/string.h /usr/include/bits/string2.h \
+  ../../../ajax/ajassert.h ../../../ajax/ajexcept.h /usr/include/setjmp.h \
+  /usr/include/bits/setjmp.h ../../../ajax/ajdefine.h \
+  ../../../ajax/ajstr.h ../../../ajax/ajtable.h ../../../ajax/ajtime.h \
+  ../../../ajax/ajfile.h ../../../ajax/ajlist.h /usr/include/sys/stat.h \
+  /usr/include/bits/stat.h ../../../ajax/ajnexus.h ../../../ajax/ajfeat.h \
+  ../../../ajax/ajmem.h ../../../ajax/ajreg.h ../../../ajax/ajax.h \
+  ../../../ajax/pcre_internal.h ../../../ajax/pcre_config.h \
+  /usr/include/ctype.h \
+  /usr/local/gcc4.2/lib/gcc/x86_64-unknown-linux-gnu/4.2.0/include/limits.h \
+  /usr/local/gcc4.2/lib/gcc/x86_64-unknown-linux-gnu/4.2.0/include/syslimits.h \
+  /usr/include/limits.h /usr/include/bits/posix1_lim.h \
+  /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
+  /usr/include/bits/posix2_lim.h ../../../ajax/pcre.h \
+  ../../../ajax/pcreposix.h ../../../ajax/ajfmt.h \
+  ../../../ajax/ajfeatdata.h ../../../ajax/ajseqdata.h \
+  ../../../ajax/ajseq.h ../../../ajax/ajseqtype.h ../../../ajax/ajarr.h \
+  ../../../ajax/ajseqread.h ../../../ajax/ajseqwrite.h \
+  ../../../ajax/ajindex.h ../../../ajax/ajseqdb.h \
+  ../../../ajax/ajseqabi.h ../../../ajax/ajreport.h \
+  ../../../ajax/ajmatrices.h ../../../ajax/ajalign.h \
+  ../../../ajax/ajrange.h ../../../ajax/ajcod.h ../../../ajax/ajmath.h \
+  ../../../ajax/ajutil.h ../../../ajax/ajtree.h ../../../ajax/ajnam.h \
+  ../../../ajax/ajmess.h ../../../ajax/ajphylo.h \
+  ../../../ajax/ajtranslate.h ../../../ajax/ajsys.h /usr/include/unistd.h \
+  /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+  /usr/include/getopt.h /usr/include/sys/param.h \
+  /usr/include/linux/param.h /usr/include/asm/param.h \
+  /usr/include/asm-x86_64/param.h ../../../ajax/ajbase.h \
+  ../../../ajax/ajdan.h ../../../ajax/ajsort.h \
+  ../../../ajax/ajgraphstruct.h ../../../ajax/ajgraphxml.h \
+  ../../../ajax/ajpdb.h ../../../ajax/ajdomain.h ../../../ajax/ajpdbio.h \
+  ../../../ajax/ajdmx.h ../../../ajax/ajpat.h ../../../ajax/ajacd.h \
+  ../../../ajax/ajcall.h ../../../ajax/ajjava.h ../../../ajax/ajvector.h \
+  ../../../ajax/ajdom.h ../../../ajax/ajgraph.h ../../../plplot/plplot.h \
+  ../../../plplot/plConfig.h ../../../plplot/pldll.h \
+  ../../../nucleus/embaln.h ../../../nucleus/embcom.h \
+  ../../../nucleus/embcons.h ../../../nucleus/embdbi.h \
+  ../../../nucleus/embread.h ../../../nucleus/embiep.h \
+  ../../../nucleus/embprop.h ../../../nucleus/embinit.h \
+  ../../../nucleus/embword.h ../../../nucleus/embpat.h \
+  ../../../nucleus/embpatlist.h ../../../nucleus/embmat.h \
+  ../../../nucleus/embdata.h ../../../nucleus/embnmer.h \
+  ../../../nucleus/embgroup.h ../../../nucleus/embshow.h \
+  ../../../nucleus/embmisc.h ../../../nucleus/embmol.h \
+  ../../../nucleus/embpdb.h ../../../nucleus/embdomain.h \
+  ../../../nucleus/embsig.h ../../../nucleus/embdmx.h \
+  ../../../nucleus/embexit.h ../../../nucleus/embindex.h
+
+../../../nucleus/emboss.h:
+
+../../../ajax/ajax.h:
+
+/usr/include/stdio.h:
+
+/usr/include/features.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/local/gcc4.2/lib/gcc/x86_64-unknown-linux-gnu/4.2.0/include/stddef.h:
+
+/usr/include/bits/types.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/bits/typesizes.h:
+
+/usr/include/libio.h:
+
+/usr/include/_G_config.h:
+
+/usr/include/wchar.h:
+
+/usr/include/bits/wchar.h:
+
+/usr/include/gconv.h:
+
+/usr/local/gcc4.2/lib/gcc/x86_64-unknown-linux-gnu/4.2.0/include/stdarg.h:
+
+/usr/include/bits/stdio_lim.h:
+
+/usr/include/bits/sys_errlist.h:
+
+/usr/include/bits/stdio.h:
+
+../../../ajax/ajarch.h:
+
+/usr/include/sys/types.h:
+
+/usr/include/time.h:
+
+/usr/include/endian.h:
+
+/usr/include/bits/endian.h:
+
+/usr/include/sys/select.h:
+
+/usr/include/bits/select.h:
+
+/usr/include/bits/sigset.h:
+
+/usr/include/bits/time.h:
+
+/usr/include/sys/sysmacros.h:
+
+/usr/include/bits/pthreadtypes.h:
+
+/usr/include/bits/sched.h:
+
+/usr/include/stdlib.h:
+
+/usr/include/alloca.h:
+
+/usr/include/string.h:
+
+/usr/include/bits/string.h:
+
+/usr/include/bits/string2.h:
+
+../../../ajax/ajassert.h:
+
+../../../ajax/ajexcept.h:
+
+/usr/include/setjmp.h:
+
+/usr/include/bits/setjmp.h:
+
+../../../ajax/ajdefine.h:
+
+../../../ajax/ajstr.h:
+
+../../../ajax/ajtable.h:
+
+../../../ajax/ajtime.h:
+
+../../../ajax/ajfile.h:
+
+../../../ajax/ajlist.h:
+
+/usr/include/sys/stat.h:
+
+/usr/include/bits/stat.h:
+
+../../../ajax/ajnexus.h:
+
+../../../ajax/ajfeat.h:
+
+../../../ajax/ajmem.h:
+
+../../../ajax/ajreg.h:
+
+../../../ajax/ajax.h:
+
+../../../ajax/pcre_internal.h:
+
+../../../ajax/pcre_config.h:
+
+/usr/include/ctype.h:
+
+/usr/local/gcc4.2/lib/gcc/x86_64-unknown-linux-gnu/4.2.0/include/limits.h:
+
+/usr/local/gcc4.2/lib/gcc/x86_64-unknown-linux-gnu/4.2.0/include/syslimits.h:
+
+/usr/include/limits.h:
+
+/usr/include/bits/posix1_lim.h:
+
+/usr/include/bits/local_lim.h:
+
+/usr/include/linux/limits.h:
+
+/usr/include/bits/posix2_lim.h:
+
+../../../ajax/pcre.h:
+
+../../../ajax/pcreposix.h:
+
+../../../ajax/ajfmt.h:
+
+../../../ajax/ajfeatdata.h:
+
+../../../ajax/ajseqdata.h:
+
+../../../ajax/ajseq.h:
+
+../../../ajax/ajseqtype.h:
+
+../../../ajax/ajarr.h:
+
+../../../ajax/ajseqread.h:
+
+../../../ajax/ajseqwrite.h:
+
+../../../ajax/ajindex.h:
+
+../../../ajax/ajseqdb.h:
+
+../../../ajax/ajseqabi.h:
+
+../../../ajax/ajreport.h:
+
+../../../ajax/ajmatrices.h:
+
+../../../ajax/ajalign.h:
+
+../../../ajax/ajrange.h:
+
+../../../ajax/ajcod.h:
+
+../../../ajax/ajmath.h:
+
+../../../ajax/ajutil.h:
+
+../../../ajax/ajtree.h:
+
+../../../ajax/ajnam.h:
+
+../../../ajax/ajmess.h:
+
+../../../ajax/ajphylo.h:
+
+../../../ajax/ajtranslate.h:
+
+../../../ajax/ajsys.h:
+
+/usr/include/unistd.h:
+
+/usr/include/bits/posix_opt.h:
+
+/usr/include/bits/confname.h:
+
+/usr/include/getopt.h:
+
+/usr/include/sys/param.h:
+
+/usr/include/linux/param.h:
+
+/usr/include/asm/param.h:
+
+/usr/include/asm-x86_64/param.h:
+
+../../../ajax/ajbase.h:
+
+../../../ajax/ajdan.h:
+
+../../../ajax/ajsort.h:
+
+../../../ajax/ajgraphstruct.h:
+
+../../../ajax/ajgraphxml.h:
+
+../../../ajax/ajpdb.h:
+
+../../../ajax/ajdomain.h:
+
+../../../ajax/ajpdbio.h:
+
+../../../ajax/ajdmx.h:
+
+../../../ajax/ajpat.h:
+
+../../../ajax/ajacd.h:
+
+../../../ajax/ajcall.h:
+
+../../../ajax/ajjava.h:
+
+../../../ajax/ajvector.h:
+
+../../../ajax/ajdom.h:
+
+../../../ajax/ajgraph.h:
+
+../../../plplot/plplot.h:
+
+../../../plplot/plConfig.h:
+
+../../../plplot/pldll.h:
+
+../../../nucleus/embaln.h:
+
+../../../nucleus/embcom.h:
+
+../../../nucleus/embcons.h:
+
+../../../nucleus/embdbi.h:
+
+../../../nucleus/embread.h:
+
+../../../nucleus/embiep.h:
+
+../../../nucleus/embprop.h:
+
+../../../nucleus/embinit.h:
+
+../../../nucleus/embword.h:
+
+../../../nucleus/embpat.h:
+
+../../../nucleus/embpatlist.h:
+
+../../../nucleus/embmat.h:
+
+../../../nucleus/embdata.h:
+
+../../../nucleus/embnmer.h:
+
+../../../nucleus/embgroup.h:
+
+../../../nucleus/embshow.h:
+
+../../../nucleus/embmisc.h:
+
+../../../nucleus/embmol.h:
+
+../../../nucleus/embpdb.h:
+
+../../../nucleus/embdomain.h:
+
+../../../nucleus/embsig.h:
+
+../../../nucleus/embdmx.h:
+
+../../../nucleus/embexit.h:
+
+../../../nucleus/embindex.h:
