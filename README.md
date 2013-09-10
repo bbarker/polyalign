@@ -13,7 +13,7 @@ known to work can be found at:
 
 https://app.box.com/s/tc7yca0c1ldjznz38vn6
 
-1) Extract emboss archive, Go to the emboss directory 
+1) Extract EMBOSS archive, Go to the emboss directory 
 
 cd emboss
 
