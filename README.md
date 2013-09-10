@@ -9,15 +9,19 @@ original svn repository (for historical purposes).
 Emboss problems mail emboss-bug@embnet.org
 
 1) Extract emboss archive, Go to the emboss directory 
+
 cd emboss
 
 2) make new directory embassy if it does not exist already.
+
 mkdir embassy
 
 3) Go into that directory
+
 cd embassy
 
 4) If you downloaded a zip file:
+
 unzip <Download Location>/polyalign-master.zip
 mv polyalign-master polyalign
 
