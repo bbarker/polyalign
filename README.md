@@ -23,6 +23,7 @@ cd embassy
 4) If you downloaded a zip file:
 
 unzip <Download Location>/polyalign-master.zip
+
 mv polyalign-master polyalign
 
 Otherwise, just clone the repository:
