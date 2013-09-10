@@ -12,6 +12,18 @@ Emboss problems mail emboss-bug@embnet.org
 
 cd emboss
 
+(build emboss)
+
+./autogen.sh
+
+./configure
+
+make
+
+Note that even if the build fails prematurely, it may be
+possible enough completed to proceed with subsequent steps
+below.
+
 2) make new directory embassy if it does not exist already.
 
 mkdir embassy
@@ -42,8 +54,6 @@ cd polyalign
 
 make
 
-make install
-
 7) To test:
 
 cd source
@@ -60,7 +70,7 @@ compiler that is freely available.
 Set the following environmental variables prior to running the
 application:
 
-OMP_NUM_THREADS=<Number of threads to use.> 
+OMP_NUM_THREADS=Number of threads to use.
 
 Typically this is the number of processing cores on your system.  Note
 that this only works on shared memory systems and cannot benefit from
