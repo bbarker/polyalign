@@ -11,6 +11,7 @@ Emboss problems mail emboss-bug@embnet.org
 0) Download emboss. Newer versions may not work. A version
 known to work can be found at:
 
+https://app.box.com/s/tc7yca0c1ldjznz38vn6
 
 1) Extract emboss archive, Go to the emboss directory 
 
