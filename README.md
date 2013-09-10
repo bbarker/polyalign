@@ -8,6 +8,10 @@ original svn repository (for historical purposes).
 
 Emboss problems mail emboss-bug@embnet.org
 
+0) Download emboss. Newer versions may not work. A version
+known to work can be found at:
+
+
 1) Extract emboss archive, Go to the emboss directory 
 
 cd emboss
