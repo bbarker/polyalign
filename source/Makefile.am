@@ -31,7 +31,7 @@ para2_SOURCES = para2.cc alignment.cc
 
 
 if LOCALLINK
-LDADD = ../../../nucleus/libnucleus.la ../../../ajax/libajax.la ../../../plplot/libeplplot.la $(XLIB)
+LDADD = ../../../nucleus/libnucleus.la ../../../ajax/libajax.la ../../../plplot/libeplplot.la -lgmp -lgmpxx $(XLIB)
 else
-LDADD = -L${embprefix}/lib -lnucleus -lajax -leplplot $(XLIB)
+LDADD = -L${embprefix}/lib -lnucleus -lajax -leplplot -lgmp -lgmpxx $(XLIB)
 endif
