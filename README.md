@@ -4,7 +4,21 @@ polyalign
 Parallel and Parametric Alignment tools are primarily designed for
 exploring questions about alignment methods, though they may also be
 useful to biologists. https://code.google.com/p/polyalign/ is the
-original svn repository (for historical purposes).
+original svn repository (for historical purposes). The code can be
+summarized as follows:
+
+1) Employs a variant of the Smith-Waterman algorithm.
+
+2) Uses GNU MP library (making it somewhat slow compared to most 
+methods using native machine types), allowing arbitrarily small or 
+large parameters (e.g. mismatch scores specific to nucleotide pairs) to be passed.
+
+3) Employs some non-embarrassingly parallel code through the use of OpenMP.
+
+4) Uses STL where possible.
+
+5) Utilizes EMBOSS for some I/O functions.
+
 
 Emboss problems mail emboss-bug@embnet.org
 
