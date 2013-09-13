@@ -19,8 +19,9 @@ large parameters (e.g. mismatch scores specific to nucleotide pairs) to be passe
 
 5) Utilizes EMBOSS for some I/O functions.
 
+==========================================================
 
-Emboss problems mail emboss-bug@embnet.org
+To install: 
 
 0) Download emboss. Newer versions may not work. A version
 known to work can be found at:
