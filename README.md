@@ -1,6 +1,8 @@
 polyalign
 =========
 
+[![DOI](https://zenodo.org/badge/4025/bbarker/polyalign.svg)](http://dx.doi.org/10.5281/zenodo.14138)
+
 Parallel and Parametric Alignment tools are primarily designed for
 exploring questions about alignment methods, though they may also be
 useful to biologists. https://code.google.com/p/polyalign/ is the
